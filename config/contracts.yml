@@ -1,0 +1,25 @@
+default: &default
+  manager_base64_address: "EQDpUkyAa6lZ12P3ZB2PL_rmWwI1I55BU4kxw_rssFL5dswA"
+  manager_address: "0:e9524c806ba959d763f7641d8f2ffae65b0235239e41538931c3faecb052f976"
+  manager_secret_key: ""
+  manager_public_key: ""
+  contracts_address:
+    distributer: EQD3G-VALnbPNSojVAx5Kov3Q7HzNqLrcxmrlF-b7DgNfcV-
+    daily_tournament: EQDlS_d8hpcOF9DLqkMROB_--CBSjJC4gh7eZsVX2H0PR9lI
+    seasonal_tournament: EQBrwYE_4AwmdDWIZ1S41JGWLXL1o6AL9H3aNCHHMPSHRw_C
+    punks_distributer: EQAkhQKjKyg7ghzIkPZZpNWvFAxoGGljA_JNQFF2TwBV5hmh
+    haloween_tournament: EQCo0oZuZX08VJPRoFTURvRqSL9bKCHwW8bYLjitHW3LY_Nq
+    lootboxes: EQDeW1bOwH7vdNNpT_3-a3L1zZRa2NGiccM0VqbzdXOhOnLT
+    lootboxes_lite: EQDyK7keSfysqMSiJhz8QRxHWwOEIQyEOCVEsywLHTfmwYEz
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+
+staging:
+  <<: *default

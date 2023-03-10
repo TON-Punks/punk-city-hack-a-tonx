@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Punk City Admin</title>
+    <%= csrf_meta_tags %>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="/admin">Home</a>
+        <a href="/admin/bot_notifications/new">Send bot notification</a>
+      </nav>
+    </header>
+
+    <main>
+      <% if @flash_message %>
+        <mark>
+          <%= @flash_message %>
+        </mark>
+      <% end %>
+      <%= yield %>
+    </main>
+  </body>
+</html>

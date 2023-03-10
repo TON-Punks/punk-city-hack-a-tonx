@@ -1,0 +1,43 @@
+---
+http_interactions:
+- request:
+    method: head
+    uri: https://punk-metaverse.fra1.digitaloceanspaces.com/animated_punks_video/400.mp4
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Connection:
+      - close
+      Host:
+      - punk-metaverse.fra1.digitaloceanspaces.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 403
+      message: Forbidden
+    headers:
+      Content-Length:
+      - '230'
+      X-Amz-Request-Id:
+      - tx00000000000000645004e-0062f43c64-5c85f102-fra1b
+      Accept-Ranges:
+      - bytes
+      Content-Type:
+      - application/xml
+      Date:
+      - Wed, 10 Aug 2022 23:16:52 GMT
+      Vary:
+      - Origin, Access-Control-Request-Headers, Access-Control-Request-Method
+      Cache-Control:
+      - max-age=60
+      Strict-Transport-Security:
+      - max-age=15552000; includeSubDomains; preload
+      Connection:
+      - close
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+  recorded_at: Wed, 10 Aug 2022 21:16:52 GMT
+recorded_with: VCR 6.1.0

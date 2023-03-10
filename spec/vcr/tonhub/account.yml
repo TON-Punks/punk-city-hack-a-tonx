@@ -1,0 +1,111 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mainnet-v4.tonhubapi.com/block/latest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - mainnet-v4.tonhubapi.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:08:17 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '394'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, must-revalidate, max-age=2
+      Last-Modified:
+      - Sat, 21 May 2022 17:08:16 GMT
+      Cf-Cache-Status:
+      - HIT
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=kiw7xsLibPByhjIrmWSoNJsq%2FwZb7fffy2g39lhDR3oZcVKDKSvrUbgbt4Aac%2FOxRTGb3089G0mUR5IU9rz%2FBmsg49RiBmD1sIAPuYdcsT2GKAuxQiqwjWv2vP%2BHLNhxlfcrCUGoQLZbAQ%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 70eee9cb3bfd7258-IST
+    body:
+      encoding: UTF-8
+      string: '{"last":{"seqno":20725289,"shard":"-9223372036854775808","workchain":-1,"fileHash":"uTBbwQ0n1Laj9ByNvpUuD0/lHXm7FlnCg1MwNnxL5sY=","rootHash":"ftRa2G++au1TDn+RemgkpfIiszgDghvg/ITgFm7ZJag="},"init":{"fileHash":"XplPz01CXAps5qeSWUtxcyBfdAo5zVb1N979KLSKD24=","rootHash":"F6OpKZKqvqeFp6CQmFomXNMfMj2EnaUSOXN+Mh+wVWk="},"stateRootHash":"/trFStvUlzUzwMGqHnfuLCNNJQXophv906tJ5vpiXdg=","now":1653152891}'
+  recorded_at: Sat, 21 May 2022 17:08:17 GMT
+- request:
+    method: get
+    uri: https://mainnet-v4.tonhubapi.com/block/20725289/EQDpUkyAa6lZ12P3ZB2PL_rmWwI1I55BU4kxw_rssFL5dswA
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - mainnet-v4.tonhubapi.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sat, 21 May 2022 17:08:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '738'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=31536000
+      Last-Modified:
+      - Sat, 21 May 2022 17:08:18 GMT
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=y8R3grZSzgW8BpY4rAbG6wuBQ8zZDad3w1W6WAW4uoBO8j8B0Xi3ozLrCN1Psk2aa%2FV4Sk2Lpo9rtK6GYWvOignbwK75yhcG1f0D6qYHQ2%2FJdbFoEBhPkzkusRXvem9A3UQvJslbjWmUZg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 70eee9ce5b8a7219-IST
+    body:
+      encoding: UTF-8
+      string: '{"account":{"state":{"type":"active","code":"te6ccsEBAQEAcQAAAN7/ACDdIIIBTJe6IYIBM5y6sZ9xsO1E0NMf0x8x1wv/4wTgpPJggwjXGCDTH9Mf0x/4IxO78mPtRNDTH9Mf0//RUTK68qFRRLryogT5AVQQVfkQ8qP4AJMg10qW0wfUAvsA6NEBpMjLH8sfy//J7VTpzt1c","data":"te6ccsEBAQEAKgAAAFAAAAIOKamjF0s932e7c3FmQYFGzk4Fik6tL+ZdcsrNhJSud1kFWvaKTzfEgA=="},"balance":{"coins":"16990742563","currencies":{}},"last":{"lt":"28101099000007","hash":"kSN6cMGpDmx6E7ls4/dcQD7601HZEeXFe0C7g3KqGkM="},"storageStat":{"lastPaid":1653152715,"duePayment":null,"used":{"bits":1323,"cells":3,"publicCells":0}}},"block":{"workchain":-1,"seqno":20725289,"shard":"-9223372036854775808","fileHash":"uTBbwQ0n1Laj9ByNvpUuD0/lHXm7FlnCg1MwNnxL5sY=","rootHash":"ftRa2G++au1TDn+RemgkpfIiszgDghvg/ITgFm7ZJag="}}'
+  recorded_at: Sat, 21 May 2022 17:08:18 GMT
+recorded_with: VCR 6.1.0

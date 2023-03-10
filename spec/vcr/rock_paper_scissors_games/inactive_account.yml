@@ -1,0 +1,113 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mainnet-v4.tonhubapi.com/block/latest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - mainnet-v4.tonhubapi.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Jun 2022 22:47:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '394'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, must-revalidate, max-age=2
+      Last-Modified:
+      - Tue, 21 Jun 2022 22:47:41 GMT
+      Cf-Cache-Status:
+      - HIT
+      Age:
+      - '2'
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Q60sIVkjyRbiPQT7gdaot0l8BiG5Pb8zRuiFEPvIAJRiYkmk7hg4IVWmNHaEBHdgvp0z5lIWIaE5Hxuj9cSitf27cV2MSdrb3bYCqbDPqiVBhac8yskiPJL6aYqjXBO5kzk7%2F3JRGPAF4Q%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 71f049a1b9b292b9-FRA
+    body:
+      encoding: UTF-8
+      string: '{"last":{"seqno":21510000,"shard":"-9223372036854775808","workchain":-1,"fileHash":"7CYkhnipcoOnVR9a1nNoXyr2js5WR1EFVQq2FStWmlw=","rootHash":"iTHgcSjNFeZ8LKNHpURoUyeXFtxXm4MmlF1SuMQAWcQ="},"init":{"fileHash":"XplPz01CXAps5qeSWUtxcyBfdAo5zVb1N979KLSKD24=","rootHash":"F6OpKZKqvqeFp6CQmFomXNMfMj2EnaUSOXN+Mh+wVWk="},"stateRootHash":"3oN6oyOW5f7jAYcYWHTadvMYjxSLdnbkCxslzp2yJ6Q=","now":1655851656}'
+  recorded_at: Tue, 21 Jun 2022 22:47:43 GMT
+- request:
+    method: get
+    uri: https://mainnet-v4.tonhubapi.com/block/21510000/EQDJtQ19LiY07Qq_cFkrP9OEkXHXLh4mkjaSCcdDdAdQE1hZ
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - mainnet-v4.tonhubapi.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Tue, 21 Jun 2022 22:47:43 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '299'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=31536000
+      Last-Modified:
+      - Tue, 21 Jun 2022 22:47:43 GMT
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=xmrCkPmcM0SXwVWdjpNW6X%2FNr3FG2X2Qyzzetk%2BxzQ8K3O4TuEwmotpVWFgP%2FFP%2BG3ukpfmHaox9LVU8RWEuRu0UQ5vwEfWqsFtOYBPfX1WDS%2B96nHvlAASX9kA4Mjw4KulroWUMmU1G3g%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 71f049a3bde78ffb-FRA
+    body:
+      encoding: UTF-8
+      string: '{"account":{"state":{"type":"uninit"},"balance":{"coins":"0","currencies":{}},"last":null,"storageStat":null},"block":{"workchain":-1,"seqno":21510000,"shard":"-9223372036854775808","fileHash":"7CYkhnipcoOnVR9a1nNoXyr2js5WR1EFVQq2FStWmlw=","rootHash":"iTHgcSjNFeZ8LKNHpURoUyeXFtxXm4MmlF1SuMQAWcQ="}}'
+  recorded_at: Tue, 21 Jun 2022 22:47:43 GMT
+recorded_with: VCR 6.1.0

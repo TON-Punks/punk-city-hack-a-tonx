@@ -1,0 +1,18 @@
+default: &default
+  access_key_id: "YQH5YOR7PBGT74RCPAJN"
+  secret_access_key: "i3b+wASR+m2IUuN6FxYYLzwTKSEZSV72EyXm5sfs7JQ"
+  endpoint: "https://fra1.digitaloceanspaces.com"
+  region: "fra1"
+  image_url: "https://punk-metaverse.fra1.digitaloceanspaces.com"
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+
+staging:
+  <<: *default

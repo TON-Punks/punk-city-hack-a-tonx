@@ -1,0 +1,48 @@
+default: &default
+  bot_credentials:
+  bot_username:
+  bot_url:
+  bot_ids:
+    - 10
+  ru_cyber_arena_chat_id:
+  en_cyber_arena_chat_id:
+  sapiens_chat_id:
+  holder_vol1_ru:
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+  ru_cyber_arena_chat_id: '-1'
+  en_cyber_arena_chat_id: '-2'
+  sapiens_chat_id: '-3'
+  holder_vol1_ru: '-4'
+
+staging:
+  <<: *default
+  bot_credentials: ""
+  bot_username: "@test_pmv_bot"
+  bot_url: "https://t.me/test_pmv_bot"
+  bot_ids:
+    - 37
+  ru_cyber_arena_chat_id: "-766535760"
+  en_cyber_arena_chat_id: "-766535760"
+  sapiens_chat_id: "-766535760"
+  holder_vol1_ru: "-766535760"
+
+production:
+  <<: *default
+  bot_credentials: ""
+  bot_username: "@punkcity2094bot"
+  bot_url: "https://t.me/punkcity2094bot"
+  bot_ids:
+    - 3187
+    - 3192
+    - 3193
+    - 3194
+    - 3195
+  ru_cyber_arena_chat_id: "-1001788180948"
+  en_cyber_arena_chat_id: "-1001868308697"
+  sapiens_chat_id: "-1001627286419"
+  holder_vol1_ru: "-1001724637974"

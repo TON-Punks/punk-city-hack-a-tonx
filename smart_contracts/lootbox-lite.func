@@ -1,0 +1,70 @@
+int equal_slices (slice a, slice b) asm "SDEQ";
+
+slice parse_sender_address (cell msg) inline {
+  var cs = msg.begin_parse();
+  cs~load_uint(4);
+  return cs~load_msg_addr();
+}
+
+() recv_internal(int smc_balance, int msg_value, cell msg, slice msg_slice) impure {
+  slice manager_address = "EQDpUkyAa6lZ12P3ZB2PL_rmWwI1I55BU4kxw_rssFL5dswA"a;
+  slice sender = parse_sender_address(msg);
+
+  builder manager_msg = begin_cell()
+    .store_uint(0x10, 6)
+    .store_slice(manager_address)
+    .store_grams(0)
+    .store_uint(0, 1 + 4 + 4 + 64 + 32 + 1 + 1);
+
+
+  if (equal_slices(manager_address, sender)) {
+    send_raw_message(manager_msg.end_cell(), 128);
+    return();
+  }
+
+  randomize_lt();
+  var chance = rand(100) + 1;
+  var weapon_position = rand(5) + 1;
+  var result = 0;
+
+  ;; 0 => :regular,
+  ;; 1 => :rare,
+  ;; 2 => :experience
+  ;; 4 => :praxis
+
+  if (chance > 65) {
+    ;; Probability 45%
+    if (chance > 80) {
+      ;; Probability 20%
+      ;; Experience
+      result = 2;
+    } else {
+      ;; Probability 15%
+      ;; Praxis
+      result = 4;
+    }
+  } else {
+    ;; Probability 65%
+    ;; Weapon
+    var weapon_chance = rand(100) + 1;
+
+    if (weapon_chance > 15) {
+      ;; Probability 85%
+      ;; Regular
+      result = 0;
+    } else {
+      ;; Probability 15%
+      ;; Rare
+      result = 1;
+    }
+  }
+
+  cell message_cell = manager_msg
+    .store_slice(msg_slice)
+    .store_uint(chance, 8)
+    .store_uint(result, 4)
+    .store_uint(weapon_position, 4)
+  .end_cell();
+
+  send_raw_message(message_cell, 64);
+}

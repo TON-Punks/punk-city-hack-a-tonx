@@ -1,0 +1,57 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://toncenter.com/api/v2/getBlockTransactions?seqno=20644653&shard=-9223372036854775808&workchain=0
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Api-Key:
+      - 9cecd4b376aa13928fb399b462ec1a80e7e9453fa56eabd277c6473568fc88db
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - toncenter.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 18 May 2022 12:55:24 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '367'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - User-Agent,Keep-Alive,Content-Type,X-API-Key
+      Access-Control-Expose-Headers:
+      - Content-Length,Content-Range
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=OGKAkLKBDWNwjfiZZd3CyRPxTi4mDHZ5XO4sFhJ3KRgl%2F3XdwPEwX4vsq8Xkj9o5n%2FODqkqqJaSQPjeBIpXPAdGxpVY4Oe3T145KGO0%2BJeRXmIClPThogVixJ94WryI%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 70d4bf380c4b6945-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"result":{"@type":"blocks.transactions","id":{"@type":"ton.blockIdExt","workchain":0,"shard":"-9223372036854775808","seqno":20644653,"root_hash":"9hCqKdN7pEAvWdI2ABT9r4z7mcR0+byB44M7GvqSl4w=","file_hash":"ZKCatY0/lpt2qvFY3fmqfHnUBl7JJLjMfBZtD0iTBHs="},"req_count":40,"incomplete":false,"transactions":[],"@extra":"1652878363.3523128:6:0.7865011617438844"}}'
+  recorded_at: Wed, 18 May 2022 12:55:24 GMT
+recorded_with: VCR 6.1.0

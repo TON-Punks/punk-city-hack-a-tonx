@@ -1,0 +1,29 @@
+<p><strong>Send bot notification</strong></p>
+
+<%= form_with(scope: :bot_notification, url: admin_bot_notifications_path, method: :post) do |form| %>
+  <article>
+    <label>Send to:</label>
+    <label>
+      <%= form.radio_button :send_type, :test, checked: true %> One User ✅
+    </label>
+
+    <%= form.label 'Chat id' %>
+    <%= form.text_field :chat_id %>
+    <hr>
+    <label>
+      <%= form.radio_button :send_type, :everyone, checked: false %> All Users (<%= User.where(unsubscribed_at: nil).count %>) ⚠️
+    </label>
+  </article>
+
+  <p>
+    <%= form.label 'Message [EN]' %>
+    <%= form.text_area(:message_en, cols: 60, rows: 10, value: @bot_notification && @bot_notification[:message_en]) %>
+  </p>
+
+  <p>
+    <%= form.label 'Message [RU]' %>
+    <%= form.text_area(:message_ru, cols: 60, rows: 10, value: @bot_notification && @bot_notification[:message_ru]) %>
+  </p>
+
+  <%= form.submit 'Send' %>
+<% end %>

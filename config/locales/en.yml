@@ -1,0 +1,1429 @@
+en:
+  common:
+    menu: "🕹 Main Menu"
+    done: "✅ Done"
+    cancel: "🙅🏼‍♂️ Cancel"
+    back: "🕹 Back"
+    confirm: "Yes"
+    error:  "🕶 The matrix has failed"
+  onboarding:
+    step1:
+      caption: "PunkCity is a place of a contest for prosperity. Will you fight alone or find some allies? Decide on your own."
+      button: "Is this the future?"
+      skip_onboarding_button: "Skip onboarding"
+    step2:
+      caption: "International elites have ended freedom. From now on, you either work for their corporations or die because of hunger. The only alternative left is to join the Digital Resistance."
+      button: "How did this happen?"
+    step3:
+      caption: "Everyone is alone in the new world. Although, we’re letting you join us."
+      button: "Who are you?"
+    step4:
+      caption: "Take a part in TON-betted Arena battles! After every fight, you will be granted Experience that is convertible to Praxis, the Resistance currency, which you can spend on the Black market or PunkCity events."
+      button_battle: "Let’s fight!"
+      button_menu: "Give me a minute to explore…"
+  free_tournaments:
+    menu:
+      caption: |
+        The *Battle* ⚔️ is a competition between citizens of *Punk City*. Participants with the biggest score for different fight types will win this competition.
+
+        You are participating in the current league.
+
+        2.5% of all Praxis-betted matches top up the League prize fund.
+        Current prize fund: %{prize} 💾
+
+        Participating in different fight types grants you a different Leaderboard score:
+        1️⃣ Winning TON-betted fight *+7 points*
+        2️⃣ Winning Praxis-betted fight *+5 points*
+        3️⃣ Winning free fight *+2 points*
+        4️⃣ Losing in any fight *-2 points*
+      buttons:
+        leaderboard: "📈 Leaderboard"
+    calibration:
+      caption: |
+        The *Battle* ⚔️ is a competition between citizens of *Punk City*. Participants with the biggest score for different fight types will win this competition.
+
+        You are NOT participating in the current league. In order to join, proceed with calibration:
+        1️⃣ Win *3 TON-betted matches*
+        - *%{ton_battles_left}* matches left
+        OR
+        2️⃣ Win *5 Praxis-betted matches*
+        - *%{praxis_battles_left}* matches left
+        OR
+        3️⃣ Win *7 free matches*
+        - *%{free_battles_left}* matches left
+
+        *We share %{prize_amount} Praxis among the TOP players of the League 🏆 every week.*
+    leaderboard:
+      caption: |
+        🗓️ Current League dates: *%{start_date} - %{end_date}*
+
+        🔢 Participants: %{participants_count}
+        🎁 Prize fund: %{prize_amount} Praxis
+        🏆 Your position in rating: %{position}
+        🎲 Your score: %{score}
+        💾 Your reward: %{reward} Praxis
+        ⚔️ Matches played: %{games_count}
+        📊 Wins/Losses: %{games_won}/%{games_lost}
+      buttons:
+        backward: "⬅️ %{from}-%{to}"
+        forward: "%{from}-%{to} ➡️"
+  crm:
+    arena:
+      champion:
+        ton_battle:
+          day1:
+            text: "You’re doing well! Maybe you want to try fighting for TON 💎?"
+            button: "Create a duel 💎"
+          day7:
+            text: "You have all chances to win! Do you want to start earning and fighting for TON 💎?"
+            button: "Create a duel 💎"
+        top_up:
+          day1:
+            text: "You are a great fighter! It's time to advance to a new level and start fighting for TON 💎. Ready to replenish your balance?"
+            button: "Yes, I’m ready!"
+          day7:
+            text: "It seems you fight well! Maybe it's time to show who is a really strong fighter over here? Top up your balance and fight for TON 💎"
+            button: "Top up balance"
+          day21:
+            text: "You are a strong fighter! The truth is on your side. Are you ready to fight for TON 💎 and beat the elites faster? Top up your balance and help your allies in this tough struggle ⚖️"
+            button: "Top up balance"
+          day28:
+            text: "You're doing great! It's time to show all your strength: top up your balance, fight for TON 💎 and earn real money!"
+            button: "Top up balance"
+      regular:
+        ton_battle:
+          day1:
+            text: "You’re doing good! You have all chances to win a lot of TON 💎. Do you want to start playing right now?”"
+            button: "Create a duel 💎"
+          day4:
+            text: "🥷 Hi! It's time for a serious game and a chance to earn real money. Ready to taste the victory"
+            button: "Create a duel 💎"
+        top_up:
+          day1:
+            text: "You’re a great fighter! Do you want to play for TON 💎 and earn real money? Top up your balance and fight to the last!"
+            button: "Top up balance"
+          day4:
+            text: "It seems you fight well! Maybe it's time to show who is a really strong fighter over here? Top up your balance and fight for TON 💎"
+            button: "Top up balance"
+          day7:
+            text: "Hey, you're good! Maybe it's time to show who is a really strong fighter over here? Top up your balance and fight for TON 💎"
+            button: "Top up balance"
+          day14:
+            text: "You are doing great! Do you want to play for TON 💎 and earn real money? Top up your balance and fight to the last"
+            button: "Top up balance"
+    onboarding:
+      completed:
+        day1:
+          text: |
+            Have you heard about Cyberarena? The whole city is talking about it — Punks go there for Praxis 💾 and TON💎
+            They allow everyone to participate!
+          button: "Visit Cyberarena ⚔️"
+        day4:
+          text: "The city is waiting for its hero! Are you ready to fight for the future of PunkCity 🌃 and defeat the world elites?"
+          button: "I’m ready!"
+        day7:
+          text: "💪 It's time to unleash your potential! Your allies need help. Help them defeat the world's elites!"
+          button: "Create a duel ⚔️"
+      missing:
+        day1:
+          text: "Hello! Allies are waiting for you; do you want to help them in the fight against the world elites?⚔️"
+          button: "Yes, I want!"
+        day4:
+          text: "Hey! It's time to help PunkCity 🏙 in the fight against elites. Are you ready to become one of the heroes?🦸"
+          button: "I’m ready!"
+        day7:
+          text: "You have great potential. I’m sure you will succeed in the struggle for the prosperity of PunkCity 🌃. Do you want to get your name in history?"
+          button: "Yes, I want!"
+    reactivation:
+      ton_battle:
+        player:
+          day1:
+            text: "⏳ You haven't been on CyberArena for a long time. Come here — you might win something!"
+            button: "Create a duel ⚔️"
+          day7:
+            text: "🤝 Your allies need you! Come to win and show who is the boss of this arena."
+            button: "Create a duel ⚔️"
+          day14:
+            text: "🥷 You have all chances to defeat these idiots, and I’ll help you. For the next 3 fights, you'll get more experience 🧬: 1.5x experience for the first, 2x for the second, and 3x for the third. This bonus will expire in 2 days. Let's go?"
+            button: "Create a duel ⚔️"
+        inactive:
+          day1:
+            text: "🥷 I haven't seen you at the Arena for a long time! Time to fix it. For the next 3 fights, you'll get more experience 🧬: 1.5x experience for the first, 2x for the second, and 3x for the third. This bonus will expire in 2 days. Are you ready to fight?"
+            button: "Yes, I’m ready ⚔️"
+          day4:
+            text: "💪 It's time to win! For the next 3 fights, you'll get more experience: 1.5x experience for the first, 2x for the second, and 3x for the third. This bonus will expire in 2 days. Hurry up!"
+            button: "Create a duel ⚔️"
+          day7:
+            text: "🤫 Hey, I have a personal offer for you. For the next 3 fights, you'll get more experience 🧬 : 1.5x experience for the first, 2x for the second, and 3x for the third. This bonus will expire in 2 days. Are you ready to fight?"
+            button: "Yes, I’m ready ⚔️"
+  notifications:
+    invite:
+      title: "💪 Invite friend"
+      description: "%{username} invites you to try your hand at the Cyber Arena in Punk City and become part of a large community of brave fighters 🥷"
+      start: "Battle!"
+    decreased_durability:
+      decreased: "🛠️ %{name}: durability reduced by 1. Current Durability: %{current_durability}/%{total_durability}"
+      disabled: "🪦 %{name}: durability is expended. Current Durability: 0/%{total_durability}. Item destroyed."
+    weekly_referral_rewards:
+      caption: |
+        💥 Last week the recruits brought you:
+
+        %{experience} Experience 🧬
+        %{ton} TON 💎
+        %{praxis} Praxis 💾
+
+        Balances updated
+      button: "🥷 Referrals"
+    open_lootbox:
+      text: |
+        You’ve just opened a %{name} #%{id}
+
+        [Smart-contract transaction](%{transaction_link}) 📃
+
+        %{content}
+      name:
+        lite: 🟦 Neurobox Lite
+        initial: 🟦 Neurobox
+      content:
+        item: Your drop is already available in the inventory.
+        praxis: "Neurobox content: %{amount} Praxis 💾"
+        experience: "Neurobox content: %{amount} Experience 🧬"
+    neurobox_for_level:
+      caption: |
+        *⭐ You have successfully completed the quest!*
+        🟦 Neurobox Lite for levels.
+        🎁 Your reward: one 🟦 Neurobox Lite. You can open it now or visit the Missions Terminal for a new quest!
+      button: "Open a Neurobox Lite 🟦"
+    balance_updated: "💳 Balance updated: %{wallet_balance}"
+    praxis_balance_updated: "💾 Praxis balance updated: %{wallet_balance}"
+    new_praxis_transaction: |
+      📩 You have received %{praxis_amount} Praxis 💾.
+
+      👤 Sender: `@%{praxis_sender}`.
+
+      Your balance: %{praxis_balance} Praxis 💾
+    new_toadz_leader: "#{user} новый претендент на Mutant Toadz NFT"
+    punk_connected: "🔌 Ton Punk #%{punk_number} connected. You'll now receive a 10% experience increase"
+    punk_new_owner: "❌ An owner for Ton Punk #%{punk_number} has been changed. Disconnecing the punk from your account. Experience bonus us annihilated"
+    regular_exchange_completed: "BANK: Your Praxis 💾 exchange has been completed."
+    new_toadz_experience: "📈 You got %{exp} experience for playing Mutant Toadz game"
+    new_zeya_experience: "📈 You got %{exp} experience for playing Zeya game"
+    chat_rep_rewarded: "🍣 In the last 24 hours, you earned %{rep} '%{rep_sign}' in our community; your reward is %{exp} experience 🧬"
+    new_golden_floppy: |
+      🎉🔆 A PunkCity magnate 🔆🎉
+      💾 %{user} has just purchased the Golden Floppy 💾
+    halloween_raffle_victory: |
+      *Congratulations!* 🥳
+      Your punk won in raffle
+    halloween_raffle_victories: "🏅 %{user1} и %{user2}  won the raffle"
+    connected_punk_bonus:
+      reward: |
+        🗓 Your Punk is tethered to PunkCity for %{connected_days}
+
+        📟 You were rewarded with %{praxis_reward} 💾 and %{exp_reward} 🧬
+
+        📈 The reward increases every third day (max: 30 💾)
+
+        %{additional_reward}
+      additional_punks_reward: |
+        👾 Bonus for additional %{punks_count} unlisted Punks: %{praxis_reward} 💾 and %{exp_reward} 🧬
+      statistics: |
+        🌃 There are %{punks_count} tethered punks in PunkCity
+        They also have %{additional_punks_count} Punks on their wallets
+        🧾 Total praxis distributed among citizens: %{praxis_reward} 💾
+    praxis_battle:
+      info: "🎭 Battle for %{game_bet} Praxis with %{creator_id}"
+      start: "Battle"
+      share:
+        title: "Share the battle"
+        description: "Share the battle for %{bet} Praxis 💾"
+      started: "Battle for %{game_bet} Praxis 💾 started"
+      creator_won: "%{creator_id} defeated %{opponent_id} and won %{won} Praxis 💾"
+      opponent_won: "%{opponent_id} defeated %{creator_id} and won %{won} Praxis 💾"
+      game_unavailable: "The game is no longer available"
+    ton_battle:
+      info: "🎭 Battle for %{game_bet} TON with %{creator_id}"
+      start: "Battle"
+      share:
+        title: "Share the battle"
+        description: "Share the battle for %{bet} TON"
+      started: "Battle for %{game_bet} 💎 started"
+      creator_won: "%{creator_id} defeated %{opponent_id} and won %{won} TON 💎 ($%{usd})"
+      opponent_won: "%{opponent_id} defeated %{creator_id} and won %{won} TON 💎 ($%{usd})"
+      game_unavailable: "The game is no longer available"
+    join_game:
+      errors:
+        game_not_found: "Game not found"
+        game_not_active: "Failed to join. The game is not active"
+        game_creator_another_battle: "Please try again later. The player is in another battle"
+        game_already_started: "Failed to join. The game has already started"
+        not_enough_ton: "Not enough TON💎 for this game, please top up your balance, by sending TON💎  to your PunkCity wallet `%{wallet_adress}`"
+        not_enough_praxis: "Not enough Praxis 💾 for this game, please top up your balance"
+    close_game:
+      escape_replica: "🏃 You were away for %{minutes} minutes and avoided the battle. Your enemy scored a technical victory."
+      replicas:
+        - "It seems that the enemy forgot to pay for the Internet."
+        - "You were tired of the enemy thinking so long. You decided to leave."
+        - "It looks like the enemy got to the wrong arena. Let's find the next opponent."
+        - "It looks like the enemy's Punk has frozen... Hey, are you there!? No.. it seems better to let him rest."
+        - "The opponent broke the rules and decided to rejoin. That won't work!"
+        - "The connection is bad in Park City today. We won't wait for the enemy to enter, we'll go further."
+      actions:
+        new_game: "⚔️ Start new battle"
+        exit_to_menu: "🕹 Leave Cyber Arena"
+    free_tournaments:
+      calibration_passed:
+        text: "🔥 Congratulations on your successful League Calibration! Find out where you rank among the best fighters in Punk City ⬇️"
+        button: "🏆 League"
+      first_day:
+        text: "👋 Hey! PunkCity fight has already begun, and players are actively fighting each other! Don't stay away — %{praxis} Praxis aren't that cheap! Are you with us?"
+        button: "Yes, I’m in!"
+      third_day:
+        text: "⏳ Tick-tock! It's not time to chill — only 4 days are left until the competition is over. Smash your opponents and take the prize! Want to know your ranking position?"
+        button: "Yes, let’s check it out!"
+      won:
+        text: |
+          🎉 Congratulations! You did a great job and get your hard-earned %{praxis} Praxis that you can use as a bet in paid games. The prize is already on your account — check your wallet.
+
+          🌟 Final place in the League: %{place}
+        button: "💾 Wallet"
+      lost:
+        text: |
+          💪 You were so close to victory! Sadly, this time luck was not on your side. Time to train yourself and wait for the next competition!
+
+          🌟 Final place in the League: %{place}
+        button: "Visit CyberArena"
+  info:
+    buttons:
+      forward: "Forward ▶️"
+      read: "Read 📖"
+      backward: "◀️ Back"
+      cyber_arena: "CyberArena ⚔️"
+      battles: "⚔️ Duels"
+      black_market: "Black Market 💾"
+      praxis_bank: "🧬 Praxis Bank"
+      profile: "👾 Profile"
+      additional: "📖 More"
+    caption:
+      cyber_arena: |
+        *CyberArena (game)*
+
+        Your goal is to destroy the enemy using weapons.
+        The main difficulty is that each of the 5 available weapons can only win 2 others. These core mechanics somewhat remind a famous **"Rock, paper, scissors"** game. You will have to think through every step because even a small accident can change the course of the game.
+        Each weapon has a chance to trigger its unique perk that can help in the battle.
+
+        🩸 *Atomic Annihilation* - double damage 🩸
+        💨 *Electric Katana* - evasion 💨
+        💉 *Neurochip Hack* - lifesteal 💉
+        🔥 *Plasma Grenade* - +30% damage (damage spread increased) 🔥
+        ⚡️ *Laser Pistol* - Counterattack (Retaliation) ⚡️
+      battles: |
+        *⚔️ Duels*
+
+        CyberArena hosts duels with other players.
+        You can fight either in free or TON-betted battles.
+
+        Participation in battles provides you with *Experience 🧬*, which can be converted into in-game currency named *Praxis 💾*
+
+        🧬 *Experience gain*
+        During your first 10 training battles, every victory will bring you *+100%* additional experience, while every loss will provide *+25%*.
+        After *100 free fights*, the experience gained will begin to decrease. These mechanics will protect PunkCity from bots and maintain the *Praxis 💾* emission stability.
+
+        *💎 TON-betted fights*
+        Fights with TON bets will help you earn more experience.
+        The experience gained depends on the bet. When creating a paid match, you will see an approximate coefficient in the menu. The experience coefficient is flexible and varies on many factors.
+        Losing betted games provides *50%* experience. In TON-betted matches, there is no experience reduction.
+      black_market: |
+        *Black market*
+
+        🌃 *"Black Market"* is a *PunkCity* store where you choose a product and pay with *Praxis 💾*
+
+        *📦 The offers are rotating:*
+        Both art collectors and casual community members can find something interesting there.
+        If you think collecting isn't your passion, you can make money by reselling items.
+
+        Sometimes the black market feature offers from our friends, such as early NFT sales or Starter Packs for P2E games powered by the TON blockchain.
+      praxis_bank: |
+        *Praxis Bank*
+
+        💾 *Praxis*
+        The experience gained in duels can be converted into *Praxis.*
+        Praxis is used for purchases on the *"Black Market".*
+        If you don't have enough time to earn *Praxis* 💾 through duels, you can purchase it in the bank for TON💎
+
+        *📚 Praxis Exchange 💾*
+        The exchange rate is *1000 experience* 🧬 = *100 Praxis* 💾
+        Each new conversion takes 1 hour more than the previous one.
+        The premium exchange feature lets you quickly convert experience into Praxis at a better rate of *1000🧬 = 150💾* (instead of 100). Premium exchange requires you to pay a commission in TON. To do this, you need to pay a commission in TON.
+
+        _The level of your *TON Punks NFT* will not change by converting free experience._
+      profile: |
+        *PunkCity Profile*
+
+        *🧬 Experience and level 🔰*
+        At the end of every battle, you earn experience that increases your Prestige level.
+        (it accumulates your lifetime experience and associates it with TON Punks NFT.)
+        Your Prestige level determines your ability to participate in airdrops. 🎁
+
+        You are encouraged to tether your TON Punks NFT to your PunkCity profile.
+
+        *🔗 Tethering TON Punks NFT to PunkCity.*
+        Tethering an NFT will provide you with a *+10% bonus* experience earned in any match.
+        You will also receive a daily reward in *Praxis 💾* and *Experience 🧬*
+        The size of this reward increases every third day, starting from *5💾* and ending with *30💾* per day
+        Each additional Punk on your wallet will bring another *5💾* and *300🧬* daily.
+
+        If you decide to sell your tethered *NFT*, you will also sell its stats and Prestige level.
+        If you've just purchased and tethered your new *TON Punks NFT*, your accumulated experience will be *transferred* onto it.
+      additional: |
+        *Important project info:*
+
+        🌃 Events often take place in PunkCity:
+        🎮 Collaborations with other *TON NFT projects*
+        🥳 Holiday mini-games
+        ❓ etc.
+
+        In *"District 49"*, you can see previous PunkCity collaborations and try to play games that previously hosted tournaments.
+        Players were awarded both *NFT* and *Whitelist access.*
+  menu:
+    profile: "👾 My Profile"
+    cyber_arena: "⚔️ Cyber Arena"
+    free_tournaments: "🏆 League"
+    residential_block: "🏢 Living Unit"
+    quest: "Punk City Quests 🧿"
+    toadz: 🐸 Mutant Toadz Room
+    district49: 🌃 Distict 49
+    black_market: "💾 Black market"
+    bank: "🧬 Praxis Bank"
+    under_construction: "🚧 Under construction 🚧"
+    halloween_event: "🎃 Kill Pumpkin Jack 🎃"
+    info: "📚 About PunkCity"
+    wallet: "💎 Wallet"
+    secret_event: Secret Event 🇸🇴
+    cyber_arena_chat: 💬 Chat
+  residential_block:
+    caption: |
+      *🏢 Living Unit.*
+
+      Here you can explore your equipment 🎒, repair it in the Workshop 🛠 or check the Missions Terminal 📟
+    buttons:
+      inventory: "🎒 Inventory"
+      workshop: "🛠 Workshop"
+      missions: "📟 Missions Terminal"
+  missions:
+    caption: |
+      *📟 Missions Terminal.*
+
+      Here you can explore all quests available for you.
+    buttons:
+      neurobox_level: "🟦 Neurobox Lite for levels"
+  neurobox_level:
+    caption: |
+      *🟦 Neurobox Lite for levels.*
+
+      🏛️ The Punk City government has decided to reward active CyberArena fighters for their development. They are now eligible to receive a NeuroBox gift for leveling up their account!
+
+      ❗ Conditions: you should level up sequentially (w/o skipping). No time limit set.
+
+      ⚠️ Re-tethering your Punk will reset this quest progress.
+
+      Neurobox Lite content and drop chances:
+      🧬 Experience - 20%
+      💾 Praxis - 15%
+      ◻️ Common weapon - 55.25%
+      🔷 Rare weapon - 9.75%
+
+      📈 Levels remain to finish: %{levels_left}
+
+      Unopened *Neurobox Lite*: %{neuroboxes_count}
+    errors:
+      not_enough_ton: "❗ You do not have enough TON on your balance to open Neurobox Lite 🟦, top up your balance by at least 0.01 TON, your current balance: %{balance} 💎"
+  workshop:
+    weapons:
+      katana: "💨 Electric Katana"
+      annihilation: "🩸 Atomic Annihilation"
+      hack: "💉 Neurochip"
+      pistol: "⚡ Laser Pistol"
+      grenade: "🔥 Plasma Grenade"
+    custom_weapons:
+      katana: "💨 %{name}"
+      annihilation: "🩸 %{name}"
+      hack: "💉 %{name}"
+      pistol: "⚡ %{name}"
+      grenade: "🔥 %{name}"
+    menu:
+      caption: |
+        *🛠 Workshop.*
+
+        ❗ You will repair the currently equipped weapon.
+        📊 The repair price will increase by 0.20% per every durability point restored.
+        🗡️ Choose the weapon to start repairing:
+    repair:
+      caption: |
+        *🛠 Weapon to repair:*
+        *- %{weapon_name}*
+        🔧 Current durability: %{current_durability}/%{max_durability}
+
+        🔢 Total durability restored: %{restored_durability}
+        📈 Current markup: %{multiplier}%
+        💵 Durability point price: %{point_price}
+
+        💾 Full repair price: %{total_price}
+        Your Praxis balance: %{user_balance}
+      button: "🛠 Repair"
+    repair_confirm:
+      caption: |
+        ✅ You have successfully repaired %{weapon_name}, it now has %{current_durability} durability points, next repair markup will be %{multiplier}%
+        ⚔️ Now you can return to the CyberArena with your freshly repaired weapon!
+    errors:
+      default_weapon: "❗Oops! It seems you tried to repair the default weapon, but it can't break!"
+      insufficient_praxis_balance: "❗Oops! It seems you don't have enough Praxis 💾 to repair this weapon. Try to earn some on CyberArena ⚔️ or proceed to exchange at the Praxis Bank 🧬"
+  cyber_arena:
+    buttons:
+      praxis: "💾 Fight for Praxis"
+      ton: "💎 TON battle"
+      free: "⚔️ Free game"
+    labels:
+      menu: "Cyber Arena ⚔️"
+      chose_type: |
+        🆚 Choose your battle type
+
+        ⚔️ A normal fight will bring you from 20 experience 🧬
+        💎 A TON fight will bring you more experience 🧬
+
+        🧬 Experience can be converted to praxis 💾
+
+        Balance: %{exp_balance} 🧬 and %{praxis_balance} 💾
+      praxis_description: |
+        ⚔️ 💾 CyberArena 💾 ⚔️
+
+        💾 Your bet should be integer Praxis amount
+
+        Example: 50, 70, 500, 7000 💾
+      ton_description  : |
+        ⚔️💎 Cyber Arena💎 ⚔️
+
+        💎 Your bet must be a multiple of 0.5 TON 💎
+        💎 For example: 0.5, 1.5, 3.0, 7.5 💎
+
+        💎 The amount of obtained XP depends on the bet sum
+
+        ≥  1 = 💎 × ~50 = additional 🧬
+        ≥ 25 = 💎 × ~65 = additional 🧬
+        50 ≤ = 💎 × ~55 = additional 🧬
+      free_description:
+        Free battle ⚔️ brings 20 XP for each victory.
+        After 10 battles the amount of earned XP will decline. The counter will reset on the next day.
+        If you want to obtain more experience, it’s always possible in TON-betted battles 💎.
+      create_game_with_praxis: "Enter bet amount. Minimal bet is %{min_bet} Praxis 💾. Max bet is %{max_bet} Praxis 💾"
+      create_game_with_ton: "The amount of bet. The minimum bet is 0.5 TON 💎. Maximum bet: %{max_bet}"
+    errors:
+      invalid_game_bet: "Incorrect bet amount. Your maximum possible bet: %{max_bet}"
+      invalid_game_praxis_bet: "Choose the bet amount. The minimal bet is %{min_bet} Praxis 💾. Maximal bet: %{max_bet} Praxis 💾"
+      invalid_game_bet_multiplier: "Incorrect bet amount. Your bet must be a multiple of 0.5 TON"
+      single_free_game: "You only have two hands. And both are engaged in battle"
+      hit_limit: "Free games are done for today. Please, try again tomorrow"
+      cant_start_game: "It is not possible to create a game at the moment"
+      too_many_leaves: "You left too many games. Try again in %{seconds} seconds"
+    with_ton:
+      top_up: "Top up your wallet balance"
+      find_game: "🔍 Find a game"
+      create_game: "➕ Create a game"
+    with_praxis:
+      top_up: "Top up your Praxis wallet balance"
+      find_game: "🔍 Find a game"
+      create_game: "➕ Create a game"
+    leaderboard:
+      level: "🥇 Level"
+      winrate: "📈 Win Rate"
+      ton: "💰 Gainings"
+    game_visibility:
+      public: "Public"
+      private: "Private"
+    wait_for_game:
+      free_battle: "Free battle"
+      ton_battle:
+        plain: "Battle for %{game_bet} TON"
+        proposal:
+          caption: "You can accept the game for %{offer_game_bet} TON or continue searching for %{game_bet} TON-betted fight"
+          accept: "Accept %{game_bet} TON fight"
+          reject: "Continue matchmaking"
+      praxis_battle:
+        plain: "Battle for %{game_bet} Praxis"
+        proposal:
+          caption: "You can accept the game for %{offer_game_bet} Praxis or continue searching for %{game_bet} Praxis-betted fight"
+          accept: "Accept %{game_bet} Praxis fight"
+          reject: "Continue matchmaking"
+      share_game: "🎭 Share the game\n%{type}"
+      cancel_search: "Cancel the search"
+      share: "🎭  Share"
+  profile:
+    buttons:
+      invite: "🥷 Referrals"
+      connect_punk: "🔌 Connect TON Punks NFT "
+      disconnect_punk: "❌  Disconnect TON Punks NFT"
+      language: "🈳 Change Language"
+      notifications: "⚙️ Notifications"
+    notifications:
+      caption: ""
+      button_enable: "✅ Enable all"
+      button_disable: "🔘 Disable all"
+    labels:
+      menu: |
+        📈 Fights played: %{games_total}
+        ⚔️ Wins/losses: %{games_wins} / %{games_losses}
+        ⚜️ Prestige level: %{prestige_level}
+        🔰 Total experience gained: %{prestige_experience} / %{new_prestige_level_threshold}
+        💎 TON gained / TON lost: %{ton_won} / %{ton_lost}
+        💾 Praxis gained / Praxis lost: %{praxis_won} / %{praxis_lost}
+
+        While *TON Punks 💎 NFT* is connected, you gain 10% more experience
+      connect_punk: "Enter the punk number"
+      disconnect_punk: "Upon disconnecting the TON Punk, your level and experience will be reset to zero. Are you sure?"
+      wait_for_transaction: |
+        1. Before tethering, remove your Punk from sale and wait around 10 minutes.
+        2. Authorize via TonHub or Tonkeeper.
+
+        Or you can send 0.1 TON from your wallet with TON Punk to the following address: `%{wallet_address}`
+      tonhub_connection: "Authorize via TonHub"
+      tonkeeper_connection: "Authorize via Tonkeeper"
+    errors:
+      punk_not_found: "Punk not found"
+  fight:
+    weapons:
+      katana: "Electric katana"
+      hack: "Neurochip hack"
+      grenade: "Plasma grenade"
+      pistol: "Laser pistol"
+      annihilation: "Atomic annihilation"
+      halloween:
+        katana: "Electric lolipops 🍭"
+        hack: "Holy water ✝️"
+        grenade: "Vampire bite 🧛"
+        pistol: "Water pistol 🔫"
+        annihilation: "Pumpkin toss 🎃"
+      perk_descriptions:
+        poison: ☢ %{chance}% Chance of poisoning your enemy
+        faraday: 🥷 %{chance}% Chance to block 80% of incoming damage
+        force_field: 🔮 %{chance}% Chance for damage absorption
+        paracelsus: 💉 %{chance}% self-heal chance
+        system_reset: 🔄 %{chance}% Chance to purge all effects
+        contusion:  ✅ %{chance}% Chance to guarantee half damage
+        breaker:  ☠ %{chance}% Chance to deal 100 damage
+        blinding_light: 🔦 %{chance}% Chance to prevent Enemy from using Atomic Annihilation and Neurochip on the next turn.
+        onearmed_bandit: 🔫  %{chance}% The enemy can’t choose Electric Katana, Laser Pistol, and Plasma Grenade on the next turn.
+        critical: 🩸 %{chance}% Crit Chance
+        miss: 💨 %{chance}% Chance to dodge
+        vampirism: "🧛 %{chance}% Vampirism Chance"
+        counter: ⚡ %{chance}% Counter Chance
+      short_perk_descriptions:
+        poison: "%{chance}% Chance\nto poison"
+        faraday: "%{chance}% Chance\nto block damage"
+        force_field: "%{chance}% Chance\nfor damage absorption"
+        paracelsus: "%{chance}% self-heal\nchance"
+        system_reset: "%{chance}% Chance to\npurge all\neffects"
+        contusion: "%{chance}% Chance\nto guarantee\nhalf damage"
+        breaker: "%{chance}% Chance to\ndeal 100 damage"
+        blinding_light: "%{chance}% Blinds\nopponent"
+        onearmed_bandit: "%{chance}% Stuns\nopponent"
+        critical: "%{chance}% Crit Chance"
+        miss: "%{chance}% Chance to dodge"
+        vampirism: "%{chance}% Vampirism chance"
+        counter: "%{chance}% Counter Chance"
+    modifier_descriptions: |
+      💨 20% Dodge Chance
+      💉 30% Vampirism Chance
+       🔥30% Extra Damage
+       ⚡5% Counter Chance
+      🩸 15% Crit Chance
+    halloween_modifier_descriptions: |
+      🍭 20% Dodge Chance
+      ✝️ 30% Restore Health Chance
+      🧛 30% Extra Damage
+      🔫 10% Counter Chance
+      🎃 15% Crit Chance
+    labels:
+      new_game: "🗡 Battle №%{game_id} has begun"
+      new_round: "Get ready for the next round!"
+      your_weapon: "Your weapon: %{weapon}"
+      end_game:
+        won:
+          free: |
+            🏆 Victory!
+
+            📈 You've got +%{xp_change} experience for this game
+
+            ⚔️ %{exp_left} experience remains until prestige level %{next_level}
+          ton: |
+            🏆 Victory!
+            🔗 [Battle contract](https://tonscan.org/address/%{game_address})
+
+            💎 You've got +%{xp_change} experience for TON-betted game
+
+            ⚔️ %{exp_left} experience remains until prestige level %{next_level}
+          praxis: |
+            🏆 Victory!
+
+            💾 You've got +%{xp_change} experience for Praxis-betted game
+
+            ⚔️ %{exp_left} experience remains until prestige level %{next_level}
+        lost:
+          free: |
+            🤕 Defeat!
+
+            📉 You didn't get any experience for this game
+
+            ⚔️ %{exp_left} experience remains until prestige level %{next_level}
+          ton: |
+            🤕 Defeat!
+            🔗 [Battle contract](https://tonscan.org/address/%{game_address})
+
+            💎 You've got +%{xp_change} experience for TON-betted game
+
+            ⚔️ %{exp_left} experience remains until prestige level %{next_level}
+          praxis: |
+            🤕 Defeat!
+
+            💾 You've got +%{xp_change} experience for Praxis-betted game
+
+            ⚔️ %{exp_left} experience remains until prestige level %{next_level}
+          halloween: |
+            🎃 Pumpkin Jack destroyed you
+
+            💎 You've got +%{xp_change} experience
+            ⚔️ %{xp_change} damage dealt in this game
+
+            🏆Check leaderboard to see your current place
+      errors:
+        game_closed: "Game is already finished"
+  wallet:
+    buttons:
+      top_up: "📥 Top Up"
+      bank: "🧬 Praxis Bank"
+      buy_ton: "💵 Purchase TON"
+      withdraw: "♻️ Withdraw"
+    labels:
+      info: "*Address:* `%{wallet_address}`\n*Balance:* %{wallet_balance} 💎\n*Praxis Balance:* %{praxis_balance} 💾"
+      top_up: "*Please, send TON to this address:*\n"
+      buy_ton: "You can purchase TON for USDT here"
+    withdraw:
+      labels:
+        ask_wallet: "Please enter the wallet address"
+        ask_sum: "How much?"
+        everything: "Use Max · %{ton} TON"
+        confirmation: "Confirming withdrawal of %{amount} TON to `%{address}`"
+      errors:
+        invalid_wallet_format: "Invalid address format"
+        invalid_number: "Invalid number"
+        insufficient_funds: "Insufficient funds.\nMaximum possible withdrawal amount: %{max_sum}"
+  secret_event:
+    menu:
+      caption: |
+        This event will only become available if *PunkCity* residents invest enough Praxis for opening. Time is running out — make sure you won’t miss all the fun!
+
+        *Praxis collected:* %{total}
+        *Investors:* %{sponsors_count}
+      buttons:
+        sponsor: "Invest Praxis"
+    sponsor:
+      caption: "Enter the amount of 💾 you want to invest:"
+      errors:
+        invalid_number: "Wrong amount"
+        insufficient_funds: "You don't have enough 💾"
+      success: "You have  successfully invested %{amount} 💾. The event will open soon!"
+  tonarchy:
+    menu:
+      caption: |
+        🌌 Explore endless and dangerous space in *PvP* strategy *Tonarchy*.
+      channel_url: "https://t.me/Tonarchy"
+      buttons:
+        game: 🎮 Play
+        pc: 💻  Play with mac and pc
+        leaderboard: 🏆 Leaderboard
+        buy: 🏪 Buy NFT lootbox
+        more_info: 🪐 More about Tonarchy
+    leaderboard:
+      caption:
+        with_punk: |
+          🏆 The prize fund will be distributed among the 10 best participants by holding score. Every winner will receive 1 Tonarchy NFT!
+        without_punk:
+          🏆 The prize fund will be distributed among the 5 best participants by holding score. Every winner will receive 1 Tonarchy NFT!
+
+  quest:
+    in_progress: "🛠 This mode is currently under development"
+  district49:
+    buttons:
+      toadz: 🐸 Mutant Toadz quarter
+      zeya: 🚀 Zeya Starbase
+      tonarchy: 🪐 Tonarchy planetarium 🪐
+    menu:
+      caption: |
+        🌃District 49. Everyone who settled in PunkCity is displayed there.
+
+        🪅 You can walk around and meet the lodgers.
+        Don’t forget to check this place later again!
+  toadz:
+    menu:
+      buttons:
+        win_nft: 🎮 Play & Win a Mutant Toadz NFT
+        more_info: 🐸 Learn more about Mutant Toadz
+      caption: |
+        **🐸** One of our first guests in ****PunkCity were the Mutant Toadz **🐸**
+        **⭐️** During the two weeks they spent in the city, we played more than 150,000 games together.
+        **🏆** 15 prizes for leaders and five random prizes for lucky players were given away
+
+        We’re very grateful to our friends for the time we spent together
+        Somebody finally decided to settle down in PunkCity! 🌇
+        🐸 Make sure to visit their room to learn more about them 🐸
+
+        Mr. Toadz was there 🐸
+        02.08.2022 - 16.08.2022
+    win_nft:
+      buttons:
+        game: 🎮 Game
+        leaderboard: 🏅 Leaderboard
+    leaderboard:
+      info: 🐸 Lucky people had chance to win free MUTANT TOADZ NFT 🐸
+  zeya:
+    menu:
+      buttons:
+        win_nft: 🎮 Play ZEYA's game
+        more_info: 🚀 Go to ZEYA
+        trade_ship: 🤖 Merchant Ship
+      caption: |
+        🚀 The first alien guests of PunkCity were ZEYA survivors
+
+        ⭐️ For two weeks, they recruited Punks into their space mission.
+
+        Together, we destroyed more than 100,000 enemy ships,
+        and defeated the Immortal B. more than 100 times.
+        The total number of take-offs went above 21,000!
+
+        🏆  15 NFTs were distributed among the best pilots,
+        with another 5 packs granted to TOP-5 participants
+        who's been holding TON Punks💎
+
+        🛸 Aliens also left one of their ships,
+        which has an advanced mission simulator,
+        in the city — who knows,
+        maybe they'll need our high-skilled pilots anytime soon...
+
+        Zeya was there!
+        23.08.2022 - 08.09.2022
+      channel_url: "https://t.me/escapefromzeya"
+    win_nft:
+      caption: |
+        🛸You can proceed to ZEYA’s mission 🛸
+
+        📜 Don't forget to check out the leaderboard.
+
+        🎖Citizens of PunkCity are getting
+        into both leaderboards automatically🎖
+      buttons:
+        game: 🎮 Proceed with the mission
+        leaderboard: 🏅 Leaderboard
+        punk_leaderboard: 🏅 Punk leaders
+    trade_ship:
+      caption: |
+        🛍 You've got onto the merchant ship 🛍
+
+        Choose the good you're interested in
+        in order to get additional info.
+
+        Your balance: %{praxis} 💾.
+      buttons:
+        booster: Membership Card %{praxis_price} 💾
+        nft: Starter Pack 49 💎
+  invite:
+    labels:
+      menu: |
+        Invite your friends to Punk City and get 2 Experience points 🧬 for each of their fights and 10% of the commission when playing on TON 💎 and Praxis 💾
+
+        Total referrals: %{referrals_count} 🥷
+
+        Total Experience gained: %{experience_gained} 🧬
+
+        Total TON received: %{ton_gained} 💎
+
+        Total Praxis received: %{praxis_gained} 💾
+      button: "💪 Invite friend"
+  rock_paper_scissors_games:
+    health_message: "Health:\nYou: %{emoji}[%{health}/%{total_health}] # Opponent: %{enemy_emoji}[%{enemy_health}/%{enemy_total_health}]"
+    draw: "🤝 Draw!\n\n"
+    miss: "💨 Miss!\n\n"
+    damage_modifier:
+      winner:
+        miss: You dodged the enemy attack
+        critical: You dealt double damage
+        increased_damage: You dealt 30% more damage
+        heal: You restored +%{amount}💗 health points
+        counter: You counterattacked your enemy and dealt %{amount} damage
+      loser:
+        miss: The enemy dodged your attack
+        critical: The enemy dealt double damage to you
+        increased_damage: The enemy dealt 30% more damage
+        heal: The enemy restored +%{amount}💗 health points
+        counter: The enemy counterattacked you and dealt %{amount} damage
+    effect_damages:
+      affected:
+        poison: "☢ %{amount} HP, Enemy poisoned You _(You cannot die only because of poisoning)_. Turns left: %{rounds_left}"
+        paracelsus: "💉 +%{amount} ❤️, You’re healing. Turns left: %{rounds_left}"
+        vampirism: "🧛 You've restored +%{amount} ❤️ HP"
+        force_field: "🔮 You absorb incoming damage. Turns left: %{rounds_left}"
+        force_field_end: "%{amount} HP shield breakdown"
+      other:
+        poison: "☢ %{amount} HP, You poisoned your enemy _(The enemy cannot die only because of poisoning)_. Turns left: %{rounds_left}"
+        paracelsus: "💉 +%{amount} ❤️, Enemy’s healing. Turns left: %{rounds_left}"
+        force_field: "🔮 Enemy absorb incoming damage. Turns left: %{rounds_left}"
+        force_field_end: "%{amount} HP shield breakdown"
+        vampirism: "🧛 Enemy restored +%{amount} ❤️ HP"
+    events:
+      affected:
+        contusion: ✅ You will receive a half of your enemy’s weapon’s damage as guaranteed damage on the next turn _(You cannot die only because of guaranteed damage)_
+        blinding_light: 🔦 You can’t choose neither Atomic Annihilation nor Neurochip on the next turn.
+        onearmed_bandit: 🔫 You can’t choose Electric Katana, Laser Pistol, and Plasma Grenade on the next turn
+        counter: ⚡ You've counter-attacked
+        critical: 🩸 You've dealt critical damage
+        faraday: 🥷 Incoming damage blocked!
+        miss: 💨 You've dodged an attack
+        system_reset: 🔄 You've purged all effects
+      other:
+        contusion: ✅ The enemy will receive a half of your weapon’s damage as guaranteed damage on the next turn _(The enemy cannot die only because of guaranteed damage)_
+        blinding_light: 🔦 The enemy can’t choose neither Atomic Annihilation nor Neurochip on the next turn.
+        onearmed_bandit: 🔫 The enemy can’t choose Electric Katana, Laser Pistol, and Plasma Grenade on the next turn
+        counter: ⚡ Enemy counter-attacked
+        critical: 🩸 Enemy dealt critical damage
+        faraday: 🥷 Ememy blocked incoming damage
+        miss: 💨 Ememy dodged your attack
+        system_reset: 🔄 The Enemy purged all effects
+  trade_center:
+    caption: |
+      💾 **You have entered the shopping alley**
+
+      🧬 In Praxis Bank, you can convert your experience and then spend it on the black market
+    menu:
+      black_market: "💾 Black market"
+      bank: "🧬 Praxis Bank"
+  black_market:
+    menu:
+      buttons:
+        ask_wallet: "💎 Change wallet address"
+        initial_lootbox: "🟦 Neurobox"
+        tonarchy_lootbox: "🪐 Tonarhy NFT Lootbox"
+        golden_floppy: "💾 Golden Floppy 🔆"
+        ton_punks_purchase: "👾 TON Punks 💎 NFT"
+        wl_mutant_toadz: "🐸 WL for Mutant toadz"
+        animated_punk: "⚙️ Animate a punk"
+        zeya_membership_card: "🛸 ZEYA Membership Card"
+        emoji_pack: "👾 Add your Punk to emoji pack"
+        neuropunk: "🃏 Create a Neuropunk"
+        zeya_nft: "🚀 ZEYA Starter Pack"
+        offer_new_product: "💡 Suggest goods"
+      caption: |
+        🤖 *The trading robot* shows you the list of goods and prices for it.
+        The offer is valid for the next 15 minutes.
+
+        You have %{praxis} 💾 with you.
+
+        🪢 *Current wallet:* `%{provided_wallet}`
+    ask_wallet:
+      labels:
+        ask: |
+          📦 Please, specify your **non-custodial** TON💎 wallet address where we can send your purchases.
+
+          ❗️ PunkCity, exchanges and Telegram bots’ wallets are **NOT SUITABLE**.
+
+          ✅ Examples of non-custodial wallets are [Tonkeeper](https://tonkeeper.com) and [TON Wallet](https://wallet.ton.org).
+
+          If you don’t have a non-custodial TON wallet, please install one of these applications and create a new wallet.
+
+          🔽 Enter your wallet address below to get into the Black market 🔽
+        success: "The wallet was successfully saved"
+      errors:
+        invalid_wallet_format: "Incorrect address format"
+    golden_floppy_purchase:
+      menu:
+        caption: |
+          ⚜️ Only real PunkCity magnates can afford this collectible NFT🀄️
+
+          ⭐️💾 the Golden Floppy is a limited and rare unit of Praxis made in form of Soulbound NFT.
+
+          ❗Attention! Soulbound NFT standard supposes permanent tethering of token to a specific wallet, making it untradable and unmarketable
+
+          Golden Floppy prices: %{praxis_price} 💾 or 1000 💎
+          Your balance:: %{praxis_balance}💾 / %{wallet_balance}💎
+        buttons:
+          ton_buy: "Purchase for 💎"
+          praxis_buy: "Purchase for 💾"
+      confirm:
+        purchase_types:
+          ton: "1000 💎"
+          praxis: "%{price} 💾"
+        caption: |
+          🧮 Total cost:
+          %{price}
+          📨 After your approval, the NFT will be sent to the following wallet:
+
+          🪢 %{wallet_address}
+
+          Please check the address carefully and approve your purchase ✅
+        buttons:
+          purchase: ✅ Approve
+      purchase:
+        caption: |
+          The NFT is about to arrive in your wallet!
+
+          🪢 %{wallet_address}
+
+    ton_punks_purchase:
+      menu:
+        caption: |
+          💎 TON Punks NFTs are one of the base assets of PunkCity🏙 and your in-game profile avatar.
+          👾 Owning a punk will provide you with the following bonuses:
+
+          🗓 Daily rewards in Praxis 💾 and Experience 🧬
+          🧬 +10% experience gain on CyberArena
+          🖼 NFT as profile picture
+          💬 Access to [private holders’ chat](https://t.me/TonPunksVerificatorBot)
+        buttons:
+          buy: "💎 Purchase"
+    wl_mutant_toadz:
+      menu:
+        caption: |
+          *Your wallet*
+          `%{provided_wallet}`
+
+          You can purchase Mutant Toadz WL for %{praxis_price} 💾.
+        button: "🐸 Purchase"
+      purchase:
+        caption: "Thanks for the purchase!"
+    zeya_membership_card:
+      menu:
+        caption: |
+          *Your wallet*
+          `%{provided_wallet}`
+
+          👾 NFT Membership cards give various bonuses in the game
+
+          - Increase in resource extraction
+          - Reduction of resource extraction time
+          - Acceleration of the production of buildings
+
+          You can purchase ZEYA Membership Card for %{praxis_price} 💾.
+        button: "🚀 Purchase"
+      purchase:
+        caption: "Thanks for the purchase!"
+    zeya_nft:
+      menu:
+        caption: |
+          *Your wallet*
+          `%{provided_wallet}`
+
+          👾 Starter pack contains 2 cards of buildings of special rarity
+          that will help you at the start of the game.
+
+          You can purchase ZEYA Starter Pack for 49 💎.
+        button: "🚀 Purchase"
+      purchase:
+        caption: "Thanks for the purchase!"
+    tonarchy_lootbox:
+      menu:
+        caption: |
+          **Tonarchy treasury box** contains in-game resources, heroes NFTs, $AQUA tokens, and other items. Every lootbox contains 3 NFTs.
+
+          You will be able to open and interact with this lootbox only after the end of event.
+
+          *Lootboxes bought:* %{lootboxes_count}
+        buttons:
+          ton: "Purchase for 5 TON 💎"
+          praxis: "Purchase for %{praxis_price} 💾"
+    initial_lootbox:
+      menu:
+        caption: |
+          **Neurobox** 🟦 contains weapons from the first Punk City collection for Cyber Arena.
+
+          📃 Opening **Neurobox** 🟦 is done with a **smart contract.**
+
+          Chances of dropping:
+          ◻️ Common weapon - 70%
+          🔷 Rare weapon - 20%
+          💠 Mythical weapon - 10%
+
+          A more detailed description of the weapons and the chances of drop can be found [here](https://silk-balloon-94f.notion.site/Weapons-from-the-Neurobox-collection-6503072e40764bd18a89e67d2b1fa38d).
+
+          *Your balance*: %{ton_balance} TON 💎
+          Unopened *Neurobox:* %{open_lootboxes}
+        buttons:
+          ton: "Purchase for 5 TON"
+          open: "Open a Neurobox 🟦"
+      purchase:
+        caption: |
+          You have purchased *Neurobox* 🟦
+
+          You can now open it and receive your drop.
+
+          Or purchase another Neurobox 🟦
+
+          Unopened *Neuroboxes:* %{open_lootboxes}
+    animated_punk:
+      menu:
+        caption: |
+          *Your wallet*
+          `%{provided_wallet}`
+
+          %{punks_list}
+          Animate a punk for %{praxis_price} 💾 or 20 💎.
+          ‼️ Current version of animation might not be final
+        punk_template: "Punk #%{punk_number}\n"
+        punks_missing: "No punks are bound to your wallet"
+        button: "⚙️ Animate ⚙️"
+      animate:
+        caption: "Animate a punk for %{praxis_price} 💾 or 20 💎."
+      request_animate:
+        caption: "Animate a punk"
+        button_praxis: "For %{praxis_price} 💾"
+        button_ton: "For 20 💎"
+      confirm_animate:
+        animated: |
+          🪄 Thanks for the purchase! Here’s your animated punk.
+          Available by link:
+          `%{url}`
+    emoji_pack:
+      menu:
+        caption: |
+          👾 Using this menu, you can add your TonPunk to our official [emoji pack.](https://t.me/addemoji/sapiens_dominabitur_astris)
+
+          *You can add only animated TonPunk*
+
+          Cost: %{praxis_price} 💾 or %{ton_price} 💎
+
+          🔽 Choose a Punk to proceed with 🔽
+        punk_template: "Punk #%{punk_number}"
+      add:
+        caption: "Add your NFT to our official emoji pack for %{praxis_price} 💾 or %{ton_price} 💎."
+      request_add:
+        caption: "Please confirm you want to add TON PUNK #%{number} into the emoji pack."
+        button_ton: "For %{ton_price} 💎"
+        button_praxis: "For %{praxis_price} 💾"
+      confirm_add:
+        added: |
+          🪄 Thanks for the purchase, your TonPunk will be added to our official emoji pack.
+    neuropunk:
+      menu:
+        caption: |
+          🌐 Create a Neuropunk — a generative NFT based on your TON Punk.
+
+          [Collection is available at Getgems](https://getgems.io/collection/EQBZt79z3nRH9Seo3Xtr50QUCCSXRhpuRsWsABqVagRMWoKb)
+
+          NFT generation & mint — %{ton_price} 💎 or %{praxis_price} 💾
+
+          🔽 Choose a Punk to proceed with 🔽
+        punk_template: "Punk #%{punk_number}"
+      request_add:
+        caption: |
+          ⚙️ Generating Neuropunk #%{number}.
+
+          🔽 Choose a Punk to proceed with 🔽
+        button_ton: "Proceed for %{ton_price} 💎"
+        button_praxis: "Proceed for %{praxis_price} 💾"
+      confirm_add:
+        added: |
+          👾 Thank you! 🎉
+
+          ⏳ Your Neuropunk is queued for generating — you will get your NFT soon.
+
+          ⚙️ Generation process will last up to one week.
+    offer_new_product:
+      menu:
+        caption: "Here you can offer your goods for the black market."
+        button: "📨 Send the offer"
+      ask_offer:
+        caption: |
+          📝 Describe the product you would want to sell using the black market 💾
+          🔖 Make sure to leave your contact info to get our feedback; feel free to attach a photo. 🖋
+          📨 Send you suggestion in one message using this chat
+      submit_offer:
+        caption: "🪄 Thank you, your suggestion will be reviewed."
+    errors:
+      not_enough_praxis: "Not enough praxis for buying"
+      already_bought: "Product was already bought"
+      max_products_reached: "You can't buy more than %{max_products} products in one hand"
+      sold_out: "Product is sold out"
+      rate_limit: "Please, wait"
+      low_ton_balance:
+        button: "🔰 Proceed with purchase"
+        text: |
+          🛑 %{ton} TON💎 are not enough to complete the operation
+
+          🔰 Top up your balance via [this Telegram bot](%{purchase_ton_link}). 🔰
+
+          Your PunkCity wallet address:
+          🪢 `%{wallet}`
+
+          Available balance: %{wallet_balance} 💎
+  bank:
+    menu:
+      caption: |
+        🏦 Welcome to the Praxis bank!
+
+        🧬 Here you can swap your experience to Praxis
+        💎 Or purchase it for TON.
+
+        💾 Your balance: *%{praxis}* Praxis 💾
+
+        🧬 Your non-converted experience: *%{exp}*.
+      buttons:
+        withdraw: "💾 Withdraw Praxis"
+        fast_exchange: "📕 Quick Exchange"
+        regular_exchange: "📗 Regular Exchange"
+        premium_exchange: "📘 Premium Exchange"
+        ton_exchange: "💾 Purchase Praxis 💎"
+    fast_exchange:
+      caption: |
+        Instant experience to praxis exchange 🏛
+        Current quick exchange rate: **%{exp_rate}** 🧬 = **%{praxis_rate}** 💾
+
+        %{rates_updates_info}
+
+        Your balance: *%{exp}* 🧬 and *%{praxis}* 💾
+      rates_updates:
+        no_exchanges: "Quotes will be updated after the exchange"
+        has_exchanges: "Quotes will be updated in 10 minutes"
+      button: "📕 Swap %{exp_rate} 🧬 to %{praxis_rate} 💾"
+      repeat_button: "Repeat: %{exp_rate} 🧬 to %{praxis_rate} 💾"
+      result: "You have just received %{received_praxis} 💾"
+      errors:
+        insufficient_experience: "You don't have enough 🧬 for swapping to 💾"
+    regular_exchange:
+      caption: |
+        You can exchange 1000 🧬 for 100 💾.
+
+        Conversion time — %{conversion_time} ⏳.
+
+        After each exchange, the conversion time will increase by %{default_time} minutes.
+
+        The conversion time will be reset after %{time_until_reset} 🌖
+        %{ongoing_exchange}
+        Your balance: *%{exp}* 🧬 and *%{praxis}* 💾
+      ongoing_exchange_caption: "Remaining time for your exchange %{time_until_finish} 🌕\n"
+      button: "📗 Exchange 1000 🧬 for 100 💾"
+      result: "You will receive 100 💾 in %{interval}"
+      time:
+        seconds: s
+        hours: h
+        minutes: m
+        days: d
+      errors:
+        already_queued: "Your exchange is already in the queue"
+    premium_exchange:
+      caption: |
+        For the premium exchange, you will receive 150% 💾.
+
+        Your balance: *%{exp}* 🧬 and *%{praxis}* 💾
+      button: "%{exp} 🧬 to %{praxis} 💾 for %{ton} 💎"
+      result: "You have just received %{praxis} 💾"
+      errors:
+        rate_limit: "Please, wait"
+        low_ton_balance: "Top up your TON wallet to proceed with an exchange"
+    ton_exchange:
+      caption: |
+        💎 Here you can purchase Praxis💾 for TON💎
+
+        💾 Praxis can be spent to obtain NFTs during PunkCity events.
+        It is also known as the main currency of the black market.
+
+        %{exchange_rate}
+
+        Your balance: %{balance_ton} 💎
+      exchange_rate: "💾 %{praxis} for %{ton} 💎"
+      button: "Buy %{praxis} 💾"
+      result: |
+        Thank you.
+        %{praxis} 💾 were credited to your account.
+      confirmation:
+        caption: "Are you sure you want to purchase %{praxis} 💾 for %{ton} 💎?"
+        confirm: "✅ Yes"
+        cancel: "📛 No"
+    withdraw:
+      menu:
+        caption: |
+          📤 You can send Praxis 💾 to any PunkCity🏙 player.
+          Min amount: %{praxis_min} 💾
+          Max amount: %{praxis_max} 💾
+
+          Commissions:
+          💾 %{comission_praxis}%
+          💎 %{comission_ton} TON
+
+          Your balance: %{praxis_balance} 💾 / %{wallet_balance} 💎
+        button: "Перевести 💾"
+      request_sum:
+        caption: |
+          Enter the transfer amount.
+
+          Min amount: %{praxis_min} 💾
+          Max amount: %{praxis_max} 💾
+      request_address:
+        caption: |
+          🧮 Total transfer cost:
+          %{total_praxis_amount} 💾 + %{ton_fee} 💎
+
+          Receive amount:
+          %{praxis_amount} 💾
+
+          🖋 Enter the recipient address:
+
+          🪢 Please make sure you use internal PunkCity wallets to make a transfer.
+
+          Your balance: %{praxis_balance} 💾 / %{wallet_balance} 💎
+      perform:
+        caption: |
+          🎉 Your transfer has been sent successfully!
+
+          ✅ Praxis 💾 will be deposited to the recipient’s wallet in a few minutes.
+      errors:
+        insufficient_praxis_balance: |
+          🛑 You need at least %{praxis} more Praxis 💾 to commit this transfer
+          ♻️ Top up your wallet or change the transfer amount.
+        invalid_praxis_amount: |
+          💾 Error when sending %{praxis} Praxis‼️
+          📫 Bank limits: %{praxis_min} - %{praxis_max} Praxis per transfer 💾
+        invalid_receiving_wallet: "❌ Enter the wallet address created within PunkCity profile  ❌"
+  language:
+    choose_language: "🈳 Choose your language"
+    ru: "🇷🇺 Русский"
+    en: "🇬🇧 English"
+  generated_images:
+    profile:
+      level: "%{level} lvl"
+      wins: "wins"
+      loses: "loses"
+  lootboxes:
+    fields:
+      durability: '🛡 Durability'
+      rarity: 'Rarity'
+      description: 'Description'
+  items:
+    names:
+      praxis: "Praxis"
+      experience: "Experience"
+  weapons:
+    names:
+      portable_reactor: 'Portable Reactor'
+      particle_splitter: 'Particle Splitter'
+      dirty_bomb: 'Dirty Bomb'
+      hardened_steel: 'Hardened Steel'
+      static_charge: 'Static Charge'
+      samurai_spirit: 'Samurai Spirit'
+      bruteforce_attack: 'Brute-force Attack'
+      injector: 'Injector'
+      matrix: 'Matrix'
+      sticky_bomb: 'Sticky Bomb'
+      cluster_projectile: 'Cluster Projectile'
+      destroyer: 'Destroyer'
+      model_94: 'Model 94'
+      supernova: 'Supernova'
+      amphibian: 'Amphibian'
+      katana: "Electric katana"
+      hack: "Neurochip hack"
+      grenade: "Plasma grenade"
+      pistol: "Laser pistol"
+      annihilation: "Atomic annihilation"
+    descriptions:
+      portable_reactor: "Provides +3 base weapon damage"
+      bruteforce_attack: "Provides +3 base weapon damage"
+      sticky_bomb: "Provides +3 base weapon damage, disables damage spread"
+      model_94: "Provides +3 base weapon damage"
+    perks:
+      critical: "%{chance}% Chance to deal double damage"
+      poison: "Radiation poisoning — drains 4-6 HP from the enemy over %{rounds} turns. Proc chance %{chance}%."
+      health: "+5 to your HP ❤️"
+      faraday: "Faraday Cage - reduces incoming damage by 80%. Proc chance - %{chance}%"
+      force_field: "Force field - you absorb damage for the next 3 turns, after which you lose health for all absorbed damage amount. Proc chance - %{chance}%"
+      paracelsus: "Paracelsus Kiss - restores 8 HP over %{rounds} turns. Proc chance — %{chance}%"
+      system_reset: "System Reset — purges all effects. Proc chance — %{chance}%"
+      contusion: "Contusion — in the next turn, the enemy is guaranteed to receive at least 50% damage from any weapon. Proc chance — %{chance}%"
+      breaker: "Destroyer — %{chance}% chance to deal 100 damage to an enemy "
+      blinding_light: "Blinding light — in the next turn the enemy can’t use neither Electric Katana nor Neurochip. Proc chance — %{chance}%"
+      onearmed_bandit: "One-armed Bandit - in the next turn the enemy can’t use Electric Katana, Laser Pistol and Plasma Grenade. Proc chance — %{chance}%"
+      miss: "%{chance}% Chance to dodge"
+      vampirism: "%{chance}% Vampirism Chance"
+      counter: "%{chance}% Counter Chance"
+  halloween_event:
+    menu:
+      caption: |
+        🎃 *Halloween comes to PunkCity*
+
+        *Pumpkin Jack* 🎃 is a long-forgotten piece of code written by *S.B Fried* staff in one of their attempts to dump TON 💎
+
+        They made it unremovable, so we can only defeat it on our *CyberArena*.
+
+        In order to do this, *PunkCity* 🏙 must unite!
+
+        🎖 TOP-5 fighters by damage dealt 🎃 will share a prize fund! 💎
+
+        To participate in this event, you will need a *Battle Pass* issued as *SoulBound NFT*. It will provide you with 5 daily attempts to fight the boss.
+
+        If you’ll run out of attempts, you will be able to purchase the additional fights ticket for 💾 or 💎
+        ...
+
+        ⚔️ Fights left for today: %{tickets_left}
+        🧮 *Prize fund* — %{balance}💎
+        🎃 *Pumpkin Jack* level - %{boss_level}
+
+      buttons:
+        fight: 🎃 Fight 🎃
+        battle_pass: 🎟 Battle Pass 🎟
+        tournament_tickets: "🎭 Second Chance"
+        leaderboard: 🏆 Leaderboard
+        info: 📋 О событии
+    battle_pass:
+      caption: |
+        Only *Battle Pass* 🎟 owners will be eligible to participate in this event. TOP-5 participants will share the prize fund. *Battle Pass* will provide you with 5 daily attempts to fight against *Pumpkin Jack* 🎃, while also keeping itself in your wallet forever through a special *SoulBound NFT* 🦇
+
+        🎟 *Battle Pass* sales distribution:
+
+        🏆 40% — prize fund
+        👾 10% — raffle among tethered [TON Punks NFT](https://getgems.io/collection/EQAo92DYMokxghKcq-CkCGSk_MgXY5Fo1SPW20gkvZl75iCN) wallets
+        👨‍💻 50% — developer bounty
+      buttons:
+        purchase: 5 TON 💎
+    purchase_battle_pass:
+      caption: "🎃 You've successfully purchased Battle Pass! It's time to defeat *Pumpkin Jack* 🎃"
+      error_caption: |
+        🛑 Insufficient funds 🛑
+        💎 Please proceed to the "Wallet" menu or send some TON to the address specified below 💎
+
+        Your PunkCity wallet address:
+        🪢 `%{wallet_address}`
+      buttons:
+        top_up: Пополните баланс кошелька
+    leaderboard:
+      caption: |
+        🏆 The prize fund will be shared between TOP-5 participants by damage dealt to *Pumpkin Jack* 🎃
+
+        First place - 50%
+        Second place - 20%
+        Third place - 13%
+        Fourth place - 8%
+        Fifth place - 4%
+
+        The current prize fund equals %{balance} TON 💎, and it increases with every new *Battle Pass* 🎟 purchase
+    purchase_tickets:
+      success: 🎃 You've successfully purchased extra tickets!
+      errors:
+        already_bought: You've already purchased tickets today 🎟
+    tournament_tickets:
+      caption: |
+        *5 additional attempts* ⚔️
+
+        Can be bought for both TON 💎 and Praxis 💾
+
+        In case the purchase is made in TON 💎
+
+        🏆 40% of coins will add up to the prize fund.
+        👾 10% will be raffled among tethered [TON Punks NFT](https://getgems.io/collection/EQAo92DYMokxghKcq-CkCGSk_MgXY5Fo1SPW20gkvZl75iCN)
+        👨‍💻 50% will remain as a developer’s bounty
+      buttons:
+        ton_buy: "Purchase for 2.5 💎"
+        praxis_buy: "Purchase for %{praxis_price} 💾"

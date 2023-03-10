@@ -1,0 +1,22 @@
+ru:
+  admin:
+    notifications:
+      emoji_pack_purchased:
+        common: |
+          ✅ Приобретено добавление панка PUNK #%{punk_number} в Sapiens emoji pack за %{payment_amount} %{payment_currency}.
+          Ссылка: `%{punk_url}`
+
+          %{transaction_info}
+        ton: |
+          💎 User transaction: `%{user_transaction}`
+          💎 sd transaction: `%{seller_transaction}`
+      neuropunk_purchased:
+        common: |
+          ✅ Приобретен Нейропанк PUNK #%{punk_number} за %{payment_amount} %{payment_currency}.
+          Ссылка: `%{punk_url}`
+          Кошелек: `%{wallet}`
+
+          %{transaction_info}
+        ton: |
+          💎 User transaction: `%{user_transaction}`
+          💎 mb13042 transaction: `%{seller_transaction}`

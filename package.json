@@ -1,0 +1,12 @@
+{
+  "dependencies": {
+    "@tonconnect/sdk": "^2.0.7",
+    "canvas": "^2.9.1",
+    "ton": "^10.0.1",
+    "ton-compiler": "^1.0.0",
+    "tonc": "^2.0.3",
+    "tonweb": "^0.0.38",
+    "tonweb-mnemonic": "^1.0.1"
+  },
+  "type": "module"
+}

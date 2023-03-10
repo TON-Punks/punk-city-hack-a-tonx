@@ -1,0 +1,165 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mainnet-v4.tonhubapi.com/block/latest
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - mainnet-v4.tonhubapi.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Jul 2022 11:09:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '394'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, must-revalidate, max-age=2
+      Cf-Cache-Status:
+      - EXPIRED
+      Last-Modified:
+      - Fri, 15 Jul 2022 11:09:02 GMT
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ijuFBGKa71aSHH%2B6y1tUNLuXy0qrEc79GtNKcepSHPxK3Rt6ifaPkYIU87otDSw30H4wOdlfv4yb%2FboPRmjrmd3p7LZIHHSwWNxMdDK0%2FHGx9ubXpCP6JEd3oqU6QkROxYCpRnZmG5cFng%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 72b20b3a79bc9b39-FRA
+    body:
+      encoding: UTF-8
+      string: '{"last":{"seqno":22084753,"shard":"-9223372036854775808","workchain":-1,"fileHash":"lMU/8uJ+4pbrO+n58umGI3tHexFHgS6/vs0PvSKpkOI=","rootHash":"5+i+J5/bL2hXNTqH3xMstIDXy0N3D2Riwf2K+UjCFFk="},"init":{"fileHash":"XplPz01CXAps5qeSWUtxcyBfdAo5zVb1N979KLSKD24=","rootHash":"F6OpKZKqvqeFp6CQmFomXNMfMj2EnaUSOXN+Mh+wVWk="},"stateRootHash":"wkD7zzMauMGaGvFSoDp6Ie7xNLw327fqxDFRa+U2m/c=","now":1657883340}'
+  recorded_at: Fri, 15 Jul 2022 11:09:04 GMT
+- request:
+    method: get
+    uri: https://mainnet-v4.tonhubapi.com/block/22084753/EQD34R5itAYYbhlW6fp63esnfpVcF0UXukGmggYN9l4i4JHn
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - mainnet-v4.tonhubapi.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Jul 2022 11:09:05 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '1201'
+      Connection:
+      - close
+      Vary:
+      - Origin
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - public, max-age=31536000
+      Last-Modified:
+      - Fri, 15 Jul 2022 11:09:05 GMT
+      Cf-Cache-Status:
+      - MISS
+      Accept-Ranges:
+      - bytes
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=4ZOPQGRnlIPVhErKSnsjw%2FE5PGLQi5vDbFMl73XA3Atsq5mGtWSfSJcyIIfSwIhPx7R2XL%2BHdzxrY%2BQwR4xrtxSlx%2FJoP0SyTwtC88Dve7BbgNVGG8eZ8lmKvk1%2Ft4fhUp16Bol0lIISdg%3D%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 72b20b3c48208fce-FRA
+    body:
+      encoding: UTF-8
+      string: '{"account":{"state":{"type":"active","code":"te6cckECBgEAAYsAART/APSkE/S88sgLAQT40zLQ0wMx+kAw7UTQINs8B9MJIacDIqcKqgBSINciKsADK8AEsfLQZVOWxwVTpscFsfLgZlOWxwUrwAKw8tBnU5XHBSvAAbDy0GjIKM8WJ88WJs8WFcsfKsAA4wI5CcABlFBo1yKdKKoAF9ciUAjXGDAHBeJtf3BSCYrkMwUEAwIAmDM4BcInkzA1dJEx4gPCJ5M0czKRMOICywPJ7VRwgBDIywVQA88WA6dagGSpBBP6AstqyXCAEMjLBVADzxYi+gISy2rJAXP7AIMG+wAA3grTAgTTAgbSCdIJJMIAjiMkdakIpCS6JXWpCKYDJbqxJHWpCKYCJrqxmFHioFHBoAwO3pOAKD3iI8IAjicjdakIpCW6JHWpCKYDJrqxBXWpCKYCUAS6FLGXGqBQu6AKCJIwMeKVbEGAKDviEDoEAwBcbDM0NDU1UTHXATBQJMcFnXJYywNUEgLPAXACzwGccVjLA3BREs8BAc8B4sntVAAW+kD6QPpA0x/TAzDplAqR","data":"te6cckEBAQEAbQAA1YAdKkmQDXUrOux+7IOx5f9cy2BGpHPIKnEmOH9dlgpfLtAAhJw/z5nTyvy0nKEd1g8B7BmrgHO6vq8qNrNG5Bcj4AoAIMjaXE2NS/iQWRmv6YQ6carpf+U91wEQkkxmlS9ingqAF6LoEVABu0MM9Q=="},"balance":{"coins":"1005025986","currencies":{}},"last":{"lt":"29478666000003","hash":"xP5nS8VFRj0D2aLtcKrdsjFJPZGMdngzSlyPq1qpT6c="},"storageStat":{"lastPaid":1657544829,"duePayment":null,"used":{"bits":3986,"cells":8,"publicCells":0}}},"block":{"workchain":-1,"seqno":22084753,"shard":"-9223372036854775808","fileHash":"lMU/8uJ+4pbrO+n58umGI3tHexFHgS6/vs0PvSKpkOI=","rootHash":"5+i+J5/bL2hXNTqH3xMstIDXy0N3D2Riwf2K+UjCFFk="}}'
+  recorded_at: Fri, 15 Jul 2022 11:09:05 GMT
+- request:
+    method: get
+    uri: https://toncenter.com/api/v2/getTransactions?address=EQD34R5itAYYbhlW6fp63esnfpVcF0UXukGmggYN9l4i4JHn
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Api-Key:
+      - 9cecd4b376aa13928fb399b462ec1a80e7e9453fa56eabd277c6473568fc88db
+      Accept:
+      - application/json
+      Connection:
+      - close
+      Host:
+      - toncenter.com
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 15 Jul 2022 11:09:14 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3089'
+      Connection:
+      - close
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - GET, POST, OPTIONS
+      Access-Control-Allow-Headers:
+      - User-Agent,Keep-Alive,Content-Type,X-API-Key
+      Access-Control-Expose-Headers:
+      - Content-Length,Content-Range
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=vHpYbnt%2BFKquLMxsyjUGxrpaHPT%2BIX3FS1t5jZUHEYXqjTJ9TOIDsHNOBgp%2BGTc5EgNg%2BO1k1pncNKDJFmYS9D3VDDkiHyuGReWmPCMpl3%2FoSPk%2BRNjdfcwj5edXhyk%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 72b20b741f06921f-FRA
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"result":[{"@type":"raw.transaction","utime":1657544829,"data":"te6cckECBwEAAZwAA7V/fhHmK0BhhuGVbp+nrd6yd+lVwXRRe6QaaCBg32XiLgAAAaz4lqVoOwsviHkDdFv5qzlhhhVSS4WRGqFiDRQy3M2BKMgEjAhQAAGs+Hgg6DYswgfQABRlxwLIAQIDAQGgBACCcoq6CiH8WxGXLM+J8yEt46OEicw5OWiUGBTPSMvq6X/Mgktzgf6x4rad0YL8OBWw3ygDcWJMiOSKFxPvlbhcIckCFwRDiQ7i4fAYZccBEQUGAMRoAEJOH+fM6eV+Wk5QjusHgPYM1cA53V9XlRtZo3ILkfAFAD34R5itAYYbhlW6fp63esnfpVcF0UXukGmggYN9l4i4EO4uHwAGFFhgAAA1nxLUrQTFmED6AGVALAAEgAAsAACeQXqsPPlgAAAAAAAAAABaAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABbwAAAAAAAAAAAAAAAAS1FLaRJ5QuM990nhh8UYSKv4bVGu4tw/IIW8MYUE5+OBEmXGBw=","transaction_id":{"@type":"internal.transactionId","lt":"29478666000003","hash":"xP5nS8VFRj0D2aLtcKrdsjFJPZGMdngzSlyPq1qpT6c="},"fee":"3029014","storage_fee":"14","other_fee":"3029000","in_msg":{"@type":"raw.message","source":"EQAhJw_z5nTyvy0nKEd1g8B7BmrgHO6vq8qNrNG5Bcj4ApcH","destination":"EQD34R5itAYYbhlW6fp63esnfpVcF0UXukGmggYN9l4i4JHn","value":"999000000","fwd_fee":"666672","ihr_fee":"0","created_lt":"29478666000002","body_hash":"2DL4yKtD5selkGsME0SjH1ibu2cvJ8Y+oDVCGY65ZTw=","msg_data":{"@type":"msg.dataRaw","body":"te6cckEBAQEADAAAEwDKgFgACQAAWAHl22Fw","init_state":""},"message":"AMqAWAAJAABYAA==\n"},"out_msgs":[]},{"@type":"raw.transaction","utime":1657544717,"data":"te6cckECDQEAA1YAA7V/fhHmK0BhhuGVbp+nrd6yd+lVwXRRe6QaaCBg32XiLgAAAaz4eCDoMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAYswgDQABxhzW0IAQIDAQGgBACCcpCuyJZa+rsW68PLm0COuucbYY14eIvIDQmENZPKyY2kiroKIfxbEZcsz4nzIS3jo4SJzDk5aJQYFM9Iy+rpf8wBEwwI5iWgEGHNbQkMAq9IAdKkmQDXUrOux+7IOx5f9cy2BGpHPIKnEmOH9dlgpfLtAD34R5itAYYbhlW6fp63esnfpVcF0UXukGmggYN9l4i4DmJaAAZxI8QAADWfDwQdBMWYQBsZBQYBFP8A9KQT9LzyyAsHANGAHSpJkA11KzrsfuyDseX/XMtgRqRzyCpxJjh/XZYKXy7QAIScP8+Z08r8tJyhHdYPAewZq4Bzur6vKjazRuQXI+AKACDI2lxNjUv4kFkZr+mEOnGq6X/lPdcBEJJMZpUvYp4KgBei6AQE+NMy0NMDMfpAMO1E0CDbPAfTCSGnAyKnCqoAUiDXIirAAyvABLHy0GVTlscFU6bHBbHy4GZTlscFK8ACsPLQZ1OVxwUrwAGw8tBoyCjPFifPFibPFhXLHyrAAOMCOQnAAZRQaNcinSiqABfXIlAI1xgwBwXibX9wUgmK5DMICQoLABb6QPpA+kDTH9MDMABcbDM0NDU1UTHXATBQJMcFnXJYywNUEgLPAXACzwGccVjLA3BREs8BAc8B4sntVADeCtMCBNMCBtIJ0gkkwgCOIyR1qQikJLoldakIpgMlurEkdakIpgImurGYUeKgUcGgDA7ek4AoPeIjwgCOJyN1qQikJbokdakIpgMmurEFdakIpgJQBLoUsZcaoFC7oAoIkjAx4pVsQYAoO+IQOgQDAJgzOAXCJ5MwNXSRMeIDwieTNHMykTDiAssDye1UcIAQyMsFUAPPFgOnWoBkqQQT+gLLaslwgBDIywVQA88WIvoCEstqyQFz+wCDBvsAAJxAdiicQAAAAAASAAAAFwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsO9YH","transaction_id":{"@type":"internal.transactionId","lt":"29478634000003","hash":"sLL4h5A3Rb+as5YYYVUkuFkRqhYg0UMtzNgSjIBIwIU="},"fee":"945000","storage_fee":"0","other_fee":"945000","in_msg":{"@type":"raw.message","source":"EQDpUkyAa6lZ12P3ZB2PL_rmWwI1I55BU4kxw_rssFL5dswA","destination":"EQD34R5itAYYbhlW6fp63esnfpVcF0UXukGmggYN9l4i4JHn","value":"10000000","fwd_fee":"3707362","ihr_fee":"0","created_lt":"29478634000002","body_hash":"lqKW0iTyhcZ77pPDD4owkVfw2qNdxbh+QQt4YwoJz8c=","msg_data":{"@type":"msg.dataRaw","body":"te6cckEBAQEAAgAAAEysuc0=","init_state":""},"message":""},"out_msgs":[]}]}'
+  recorded_at: Fri, 15 Jul 2022 11:09:14 GMT
+recorded_with: VCR 6.1.0

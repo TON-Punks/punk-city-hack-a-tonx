@@ -1,0 +1,79 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://combot.org/c/-1001788180948/chat_users/v2?csv=yes&limit=3000&skip=0
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      Cookie:
+      - auth=57cbd48c78e59fb041b3d3244ac7521eb79c8ffd34010bf179e4c0f2a3814f044ab0795243543ac3288ed8b4a56d8fe98193deb2a89d21bbce1069771da677f9;
+        uid=704746604; session_id=17e7961a-f49e-4ee6-ac74-0ed36380a0bf
+      Connection:
+      - close
+      Host:
+      - combot.org
+      User-Agent:
+      - http.rb/5.0.4
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Fri, 05 Aug 2022 02:04:19 GMT
+      Content-Type:
+      - text/csv
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - close
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Disposition:
+      - attachment; filename=VOL. PUNK HODLERS - users (exported from combot.org).csv
+      Content-Transfer-Encoding:
+      - binary
+      Vary:
+      - Accept-Encoding
+      Etag:
+      - W/"f228c153716b1c34996237eacc337f39"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Set-Cookie:
+      - _combot_session=uF%2F9pPtIslR8KJVOSfpq3puYuVAdEmq3Q60Wr0%2FI7qVYmjzlXXwMedEuH27e2u6Bp8x1jhYRy1oSptBbGlVtb2UFMg48vWeCpsfm4UXzrqJreywxhmgRanGXhMTk0d%2FUD4m7Ew5anG6pMrfVlPTEHNAcKhs%2BZGyZhmkHM1BSFohgghUeif9sPAi3w%2F9jlfIFcNE0sIvz%2FYGKwaPM5qEsBlkjRlg%2B%2FcdGj00Av5WdFHixO%2BvwXdALi1H7WBNWxwZcwx9Q%2FMrGEfiZCHwIkVF8wurCirrt1hEABAGYBievsNMYQroPkSkEvGCBD2sUECop%2FMVf9fZowSfmvIYVoXCYQYxS%2BapLrEeDaD%2FZbNOYOoe85yNC1JBtyPCbaammWjHJ%2BmYE7b03zaIpYo3aS3rENuwojtmBfySMMXKvABAC5CeROnEuumt0BDID8O2%2BTIMF%2FiDQ6YRpBiN%2F1j8vRaBEarqyDSVpR4z8OIKGzijASkWcTuvHXwYt8fGb8B6xCgiC%2FzDYjXzcCx9F38KdQwf2ouBPOOtMQvqJag7yT9q327w9DtstSZHuWF5U2DsPvkf%2BLOwaB60FW4jJGUNRY2T6gP6kyGyck%2F9u2pvgyjOmbpchztq0t79eEAuQQ3Jao3o7r48Y6ThG54Qu1NMNM0Sm2WqhGLHZ%2FfUDnrvrXMphlPA40d4JbEz0ohd5Yqw2HKGO9KSL5vUC7IoVFiM45tXtjUCS4RmgDA%2BW50k2jNtLHfdbhWiNEwCD%2BTFg5uBIwHDWBOkJRXmxm6D4%2FBQkVBKYtCdZXS8%2FdHOJ8CXIadBikSMVS36fU7ppyiAAhA%3D%3D--e0QSs%2BeM9xq1WnXy--6RNjGAxvEWPrkv%2Fg86af4g%3D%3D;
+        path=/; HttpOnly; SameSite=Lax
+      X-Request-Id:
+      - 5485851c-1c47-46d4-ae57-ad9798bb9759
+      X-Runtime:
+      - '1.723328'
+      Cf-Cache-Status:
+      - DYNAMIC
+      Expect-Ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=NGjtQMBZ1o5kfDXkOToULU99EBt%2FcTVXZaGNcdd3b1OSXJmtTCurujjrgBHZXmm9eNWtgO%2FDPgQg808w8HUOuTJirWeJH3lPmM4pinCKbcbc8tO%2FmPqPn6SeYUk%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 735bf614df78006e-WAW
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: ASCII-8BIT
+      string: "123,GG Master,thunderton,1,2022-07-12 18:01:50 UTC,7,10\n456,Bogdanoff,,12,2022-07-29 22:02:13 UTC,69,20"
+  recorded_at: Fri, 05 Aug 2022 02:04:19 GMT
+recorded_with: VCR 6.1.0

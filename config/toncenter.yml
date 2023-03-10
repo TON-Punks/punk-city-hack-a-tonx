@@ -1,0 +1,21 @@
+default: &default
+ api_key: ""
+ url: "https://toncenter.com/api/v2/"
+
+development:
+  <<: *default
+  api_key: ""
+  url: "http://164.92.204.130/"
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+  api_key: ""
+  url: "http://164.92.204.130/"
+
+staging:
+  <<: *default
+  api_key: ""
+  url: "http://164.92.204.130/"

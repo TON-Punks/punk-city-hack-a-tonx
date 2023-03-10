@@ -1,0 +1,69 @@
+---
+:concurrency: 3
+production:
+  :concurrency: 11
+:queues:
+  - high
+  - default
+  - low
+:schedule:
+  new_transactions_monitoring_worker:
+    class: 'NewTransactionsMonitoringWorker'
+    every: '10s'
+  update_owners:
+    class: 'Punks::UpdateOwners'
+    every: '10m'
+  close_stale_games_worker:
+    class: 'CloseStaleGamesWorker'
+    every: '1m'
+  close_stale_user_sessions:
+    class: 'CloseStaleUserSessionsWorker'
+    every: '1m'
+  update_statistics:
+    class: 'Users::UpdateStatistics'
+    every: '10m'
+  cleanup_stale_notifications:
+    class: 'RockPaperScissorsGames::CleanNotificationsWorker'
+    every: '1m'
+  product_prices_decrease:
+    class: 'BlackMarket::ProductPriceDecreaseWorker'
+    cron: '0 */3 * * *'
+  purchases_validation:
+    class: 'BlackMarket::PurchasesValidationWorker'
+    every: '1m'
+  chat_rep_rewards_worker:
+    class: 'RepExperience::SendRewardsWorker'
+    cron: '0 9 * * *'
+  connected_punk_bonuses_worker:
+    class: 'Praxis::ConnectedPunkBonusesWorker'
+    cron: '30 9 * * *'
+  connected_punk_statistics_worker:
+    class: 'Praxis::ConnectedPunkStatisticsWorker'
+    cron: '0 16 * * 1'
+  schedule_bot_game_creation_worker:
+    class: 'RockPaperScissorsGames::ScheduleBotGameCreationWorker'
+    every: '70m'
+  schedule_crm_worker:
+    class: 'Crm::ScheduledWorker'
+    cron: '0 15 * * *'
+  segments_recalculation_worker:
+    class: 'Segments::RecalculationWorker'
+    cron: '0 14 * * *'
+  schedule_battle_pass_tickets_refresh:
+    class: 'BattlePasses::RefreshTickets'
+    cron: '0 4 * * *'
+  free_tournaments_start:
+    class: 'FreeTournaments::StartWorker'
+    cron: '20 0 * * *'
+  free_tournament_finalize:
+    class: 'FreeTournaments::FinalizeWorker'
+    every: '5m'
+  free_tournament_notifications:
+    class: 'FreeTournaments::InvitesWorker'
+    cron: '0 12 * * *'
+  referral_statistics_notifications:
+    class: 'Users::ReferralStatisticsWorker'
+    cron: '0 13 * * MON'
+  free_tournament_leaderboard:
+    class: 'FreeTournaments::GenerateLeaderboardWorker'
+    every: '3m'

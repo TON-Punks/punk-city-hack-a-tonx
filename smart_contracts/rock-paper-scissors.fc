@@ -1,0 +1,150 @@
+{-
+manager_address:MsgAddressInt creator_address:MsgAddressInt opponent_address:MsgAddressInt = GameAddresses
+address:GameAddresses status:(##3) rounds:(##10) creator_hands:(##3 * rounds) opponent_hands:(##3 * rounds) = MsgBody;
+
+status
+0 -- created
+1 -- waiting for creator_hands
+2 -- waiting for opponent_hands
+3 -- creator won
+4 -- opponent won
+
+hand
+0 -- none
+1 -- annihilation
+2 -- katana
+3 -- hack
+4 -- grenade
+5 -- pistol
+
+-}
+
+
+int equal_slices (slice a, slice b) asm "SDEQ";
+
+slice parse_sender_address (cell msg) inline {
+  var cs = msg.begin_parse();
+  cs~load_uint(4);
+  return cs~load_msg_addr();
+}
+
+(slice, slice, slice, int, int, int, int) parse_data_storage(slice ds) impure inline_ref {
+  return (
+    ds~load_msg_addr(),
+    ds~load_msg_addr(),
+    ds~load_msg_addr(),
+    ds~load_uint(32),
+    ds~load_uint(8),
+    ds~load_uint(8),
+    ds~load_uint(4)
+  );
+}
+
+() recv_internal(int smc_balance, int msg_value, cell msg, slice msg_slice) impure {
+  slice sender = parse_sender_address(msg);
+  slice data_slice = get_data().begin_parse();
+
+  (
+    slice manager_address,
+    slice creator_address,
+    slice opponent_address,
+    int game_id,
+    int creator_health,
+    int opponent_health,
+    int status
+  ) = parse_data_storage(data_slice);
+
+
+  int rounds = msg_slice~load_uint(10);
+  int move_size = 3;
+  int damage_size = 10;
+  int hands_length = move_size * rounds;
+  slice damages = msg_slice.slice_last(damage_size * rounds * 2);
+
+  ;;throw_if(100, hands.slice_bits() != hands_length);
+  throw_if(101, ((status == 3) | (status == 4)));
+  throw_unless(102, (equal_slices(sender, creator_address) | equal_slices(sender, opponent_address)));
+  throw_if(103, (equal_slices(sender, creator_address) & (status == 2)));
+  throw_if(104, (equal_slices(sender, opponent_address) & (status == 1)));
+
+  builder storage = begin_cell()
+    .store_slice(manager_address)
+    .store_slice(creator_address)
+    .store_slice(opponent_address)
+    .store_uint(game_id, 32)
+    .store_uint(creator_health, 8)
+    .store_uint(opponent_health, 8);
+
+
+  if (status == 0) {
+    int hands = msg_slice~load_uint(hands_length);
+
+    if (equal_slices(sender, creator_address)) {
+      storage~store_uint(2, 4);
+      storage = storage.store_uint(hands, hands_length);
+      storage~store_uint(0, hands_length);
+    } else {
+      storage~store_uint(1, 4);
+      storage~store_uint(0, hands_length);
+      storage = storage.store_uint(hands, hands_length);
+    }
+
+    set_data(storage.end_cell());
+    return();
+
+  } else {
+    slice opponent_hands = null();
+    slice creator_hands = null();
+
+    if (status == 1) {
+      opponent_hands = data_slice.slice_last(hands_length);
+      creator_hands = msg_slice;
+    } else {
+      var all_hands = data_slice.slice_last(hands_length * 2);
+      creator_hands = all_hands~load_bits(hands_length);
+      opponent_hands = msg_slice;
+    }
+
+    slice winner = null();
+    int new_status = -1;
+    int creator_damage = 0;
+    int opponent_damage = 0;
+
+    repeat (rounds) {
+      int creator_hand = creator_hands~load_uint(move_size);
+      int opponent_hand = opponent_hands~load_uint(move_size);
+
+      creator_damage += damages~load_int(damage_size);
+      opponent_damage += damages~load_int(damage_size);
+    }
+
+    if (opponent_damage >= creator_health) {
+      new_status = 4;
+      winner = opponent_address;
+    } else {
+      if (creator_damage >= opponent_health) {
+        winner = creator_address;
+        new_status = 3;
+      }
+    }
+
+    set_data(storage.store_uint(new_status, 4).end_cell());
+
+    cell winner_msg = begin_cell()
+      .store_uint(0x10, 6)
+      .store_slice(winner)
+      .store_grams(smc_balance * 90 / 100)
+      .store_uint(0, 1 + 4 + 4 + 64 + 32 + 1 + 1)
+    .end_cell();
+
+    cell manager_msg = begin_cell()
+      .store_uint(0x10, 6)
+      .store_slice(manager_address)
+      .store_grams(0)
+      .store_uint(0, 1 + 4 + 4 + 64 + 32 + 1 + 1)
+    .end_cell();
+
+    send_raw_message(winner_msg, 3);
+    send_raw_message(manager_msg, 128);
+  }
+}

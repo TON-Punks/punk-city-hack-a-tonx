@@ -1,0 +1,20 @@
+default: &default
+  base64_address: "EQDpUkyAa6lZ12P3ZB2PL_rmWwI1I55BU4kxw_rssFL5dswA"
+  address: "0:e9524c806ba959d763f7641d8f2ffae65b0235239e41538931c3faecb052f976"
+  secret_key: ""
+  public_key: ""
+
+development:
+  <<: *default
+
+test:
+  base64_address: ""
+  address: ""
+  secret_key: "b94613931d3fca6d139201560a83607c0bd231e0bd773028e6a33a6ad07d9b2d371f887e6752fd0c18637de503dbf017674cbc1b5cc640d5774c79729c5faef8"
+  public_key: "371f887e6752fd0c18637de503dbf017674cbc1b5cc640d5774c79729c5faef8"
+
+production:
+  <<: *default
+
+staging:
+  <<: *default

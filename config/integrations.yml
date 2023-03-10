@@ -1,0 +1,17 @@
+default: &default
+  frontend_url: 'https://punk-city-frontend.vercel.app'
+  ton_connect_url: 'https://punk-verse.ton_connect_url.com/ton_connect'
+
+development:
+  <<: *default
+
+test:
+  <<: *default
+
+production:
+  <<: *default
+
+staging:
+  <<: *default
+  frontend_url: 'https://punk-city-frontend-git-litebox-thesmartnik.vercel.app'
+  ton_connect_url: 'https://punk-verse-staging.ton_connect_url.com/ton_connect'
